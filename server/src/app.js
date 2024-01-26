@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
@@ -6,6 +7,8 @@ import helmet from 'helmet';
 import mongoSanitize from 'express-mongo-sanitize';
 import { xss } from 'express-xss-sanitizer';
 import hpp from 'hpp';
+
+import globalErrorHandler from '../controllers/errorController.js';
 
 const app = express();
 app.use(cors());
@@ -41,5 +44,8 @@ app.use(xss());
 app.use(hpp());
 
 // Routes
+
+// Global Error Handler
+app.use(globalErrorHandler);
 
 export default app;
