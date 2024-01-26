@@ -22,4 +22,14 @@ export const login = catchAsync(async (req, res, next) => {
   }
 
   const user = await User.findOne({ username }).select('+password');
+
+  if (!user || !(await user.correctPassword(password, user.password))) {
+    return next(
+      new AppError('Incorrect username or password. Please try again!', 401),
+    );
+  }
+  res.status(200).json({
+    status: 'success',
+    message: 'You are now logged in!',
+  });
 });
