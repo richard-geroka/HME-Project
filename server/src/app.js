@@ -9,6 +9,7 @@ import { xss } from 'express-xss-sanitizer';
 import hpp from 'hpp';
 
 import globalErrorHandler from '../controllers/errorController.js';
+import userRouter from '../routes/userRoutes.js';
 
 const app = express();
 app.use(cors());
@@ -44,6 +45,7 @@ app.use(xss());
 app.use(hpp());
 
 // Routes
+app.use('/api/user', userRouter);
 
 // Global Error Handler
 app.use(globalErrorHandler);
