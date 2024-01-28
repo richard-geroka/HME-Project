@@ -3,7 +3,7 @@ import Project from '../models/projectModel.js';
 import catchAsync from '../utils/catchAsync.js';
 import AppError from '../utils/appError.js';
 
-const addProject = catchAsync(async (req, res, next) => {
+export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
     projectName: req.body.projectName,
     location: req.body.location,
@@ -20,4 +20,12 @@ const addProject = catchAsync(async (req, res, next) => {
   });
 });
 
-export default addProject;
+export const getProjects = catchAsync(async (req, res, next) => {
+  const projects = await Project.find({});
+
+  res.status(200).json({
+    status: 'success',
+    results: projects.length,
+    projects,
+  });
+});
