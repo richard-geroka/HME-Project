@@ -1,5 +1,6 @@
 /* eslint-disable import/extensions */
 import jwt from 'jsonwebtoken';
+import { promisify } from 'util';
 import User from '../models/userModel.js';
 import catchAsync from '../utils/catchAsync.js';
 import AppError from '../utils/appError.js';
@@ -59,4 +60,32 @@ export const login = catchAsync(async (req, res, next) => {
   }
 
   createSendToken(user, 200, res);
+});
+
+export const protectRoute = catchAsync(async (req, res, next) => {
+  // Get token and check if it exist
+  let token;
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.startsWith('Bearer')
+  ) {
+    token = req.headers.authorization.split(' ')[1];
+  }
+  if (!token) {
+    return next(new AppError('You are not logged in. Please log in', 401));
+  }
+
+  // Verify the token
+  const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+  // Check if user still exist
+  const currentUser = await User.findById(decoded.id);
+
+  if (!currentUser) {
+    return next(new AppError('The user with this token no longer exist', 401));
+  }
+
+  // Grant access
+  req.user = currentUser;
+  next();
 });
