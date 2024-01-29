@@ -16,3 +16,5 @@ const addService = catchAsync(async (req, res, next) => {
     service,
   });
 });
+
+export default addService;

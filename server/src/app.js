@@ -11,6 +11,7 @@ import hpp from 'hpp';
 import globalErrorHandler from '../controllers/errorController.js';
 import userRouter from '../routes/userRoutes.js';
 import projectRouter from '../routes/projectRoutes.js';
+import serviceRouter from '../routes/serviceRoutes.js';
 
 const app = express();
 app.use(cors());
@@ -48,6 +49,7 @@ app.use(hpp());
 // Routes
 app.use('/api/user', userRouter);
 app.use('api/project', projectRouter);
+app.use('/api/service', serviceRouter);
 
 // Global Error Handler
 app.use(globalErrorHandler);
