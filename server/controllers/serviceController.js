@@ -39,6 +39,7 @@ export const updateService = catchAsync(async (req, res, next) => {
 
   res.status(200).json({
     status: 'success',
+    message: 'Service updated successfully!',
     service,
   });
 });
