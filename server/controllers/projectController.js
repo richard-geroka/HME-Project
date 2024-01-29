@@ -29,3 +29,19 @@ export const getProjects = catchAsync(async (req, res, next) => {
     projects,
   });
 });
+
+export const updateProject = catchAsync(async (req, res, next) => {
+  const project = await Project.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!project) {
+    return next(new AppError('No project found with that id', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    project,
+  });
+});
