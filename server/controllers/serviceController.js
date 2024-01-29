@@ -26,3 +26,19 @@ export const getServices = catchAsync(async (req, res, next) => {
     services,
   });
 });
+
+export const updateService = catchAsync(async (req, res, next) => {
+  const service = await Service.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  if (!service) {
+    return next(new AppError('No service found with that id', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    service,
+  });
+});
