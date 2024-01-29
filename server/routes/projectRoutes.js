@@ -6,8 +6,12 @@ import {
   getProjects,
   updateProject,
 } from '../controllers/projectController.js';
+import { protectRoute } from '../controllers/authController.js';
 
 const router = express.Router();
+
+// Protect routes below
+router.use(protectRoute);
 
 router.route('/').post(addProject).get(getProjects);
 

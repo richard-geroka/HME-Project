@@ -6,8 +6,12 @@ import {
   getServices,
   updateService,
 } from '../controllers/serviceController.js';
+import { protectRoute } from '../controllers/authController.js';
 
 const router = express.Router();
+
+// Protect routes below
+router.use(protectRoute);
 
 router.route('/').post(addService).get(getServices);
 
