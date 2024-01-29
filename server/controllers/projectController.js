@@ -45,3 +45,16 @@ export const updateProject = catchAsync(async (req, res, next) => {
     project,
   });
 });
+
+export const deleteProject = catchAsync(async (req, res, next) => {
+  const project = await Project.findByIdAndDelete(req.params.id);
+
+  if (!project) {
+    return next(new AppError('No project found with that id', 404));
+  }
+
+  res.status(204).json({
+    status: 'success',
+    message: 'Project deleted successfully!',
+  });
+});
