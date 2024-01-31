@@ -1,5 +1,11 @@
+import CollapsibleNavbar from '../components/CollapsibleNavbar';
+
 const MainPage = () => {
-  return <div>Hello, World!</div>;
+  return (
+    <nav>
+      <CollapsibleNavbar />
+    </nav>
+  );
 };
 
 export default MainPage;
