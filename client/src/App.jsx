@@ -1,9 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainPage from './pages/MainPage';
-import ServicePage from './pages/ServicePage';
-import ProjectPage from './pages/ProjectPage';
+import MainPage from './pages/main/MainPage';
+import ServicePage from './pages/services/ServicePage';
+import ProjectPage from './pages/projects/ProjectPage';
 
 function App() {
   return (
