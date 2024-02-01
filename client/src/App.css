@@ -1,6 +1,6 @@
 /* Hero Style */
 .hero {
-  background-image: url('./assets/images/Background.jpg');
+  background-image: url('./assets/images/Background1.png');
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
@@ -8,10 +8,36 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 5rem;
 }
 
 .hero h1 {
-  color: white;
-  border: 2px solid white;
-  padding: 0.75em;
+  color: #fff;
+  /* border: 2px solid #fff;
+  padding: 0.75em; */
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 600;
+}
+
+.hero p {
+  /* padding: 0.5em; */
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+}
+
+.hero a {
+  color: rgb(72, 221, 18);
+  text-shadow: 1px 1px 1px #000;
+  letter-spacing: 0.2rem;
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  /* .hero p {
+    font-size: 1.5rem;
+  } */
 }

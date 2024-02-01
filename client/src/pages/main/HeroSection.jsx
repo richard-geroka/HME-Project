@@ -2,7 +2,9 @@ const HeroSection = () => {
   return (
     <>
       <section className="hero" id="home">
-        <h1>HME Construction Services</h1>
+        <h1>
+          HME <em>Construction Services</em>
+        </h1>
         <p>
           <span className="text-success">Plan.</span>{' '}
           <span className="text-white">Design.</span>{' '}
