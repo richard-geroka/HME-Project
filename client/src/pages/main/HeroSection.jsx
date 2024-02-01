@@ -6,9 +6,9 @@ const HeroSection = () => {
           HME <em>Construction Services</em>
         </h1>
         <p>
-          <span className="text-success">Plan.</span>{' '}
-          <span className="text-white">Design.</span>{' '}
-          <span className="text-danger">Build.</span>
+          <span className="text-plan">Plan.</span>{' '}
+          <span className="text-design">Design.</span>{' '}
+          <span className="text-build">Build.</span>
         </p>
         <a className="hero-link" href="#projects">
           projects
