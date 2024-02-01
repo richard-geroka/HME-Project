@@ -1,4 +1,5 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
+import HeroSection from './HeroSection';
 
 const MainPage = () => {
   return (
@@ -8,6 +9,9 @@ const MainPage = () => {
           <CollapsibleNavbar />
         </nav>
       </header>
+      <main>
+        <HeroSection />
+      </main>
     </>
   );
 };
