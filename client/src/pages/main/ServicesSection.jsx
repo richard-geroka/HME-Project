@@ -9,9 +9,9 @@ const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services">
-        <h2 className="mb-5">
+        {/* <h2 className="mb-5">
           WHAT WE <span className="underline-do">DO</span>
-        </h2>
+        </h2> */}
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card>
@@ -24,7 +24,6 @@ const ServicesSection = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </div>
@@ -37,11 +36,9 @@ const ServicesSection = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </div>
-
           <div className="col">
             <Card>
               <Card.Img variant="top" src={plan} />
@@ -51,7 +48,6 @@ const ServicesSection = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </div>
@@ -64,11 +60,21 @@ const ServicesSection = () => {
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
               </Card.Body>
             </Card>
           </div>
         </div>
+        <p className="services-p mt-5">
+          <Button
+            variant="outline-success"
+            href="#contact"
+            size="lg"
+            className="me-1"
+          >
+            Contact us
+          </Button>
+          to learn more about our professional services.
+        </p>
       </section>
     </>
   );

@@ -80,9 +80,10 @@
   padding: 5em;
 }
 
-.services h2 {
+.services .services-p {
   color: rgba(21, 64, 5, 1);
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .underline-do {
