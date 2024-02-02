@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import design from '../../assets/images/design-card5.png';
-import build from '../../assets/images/build-card5.png';
-import plan from '../../assets/images/3D-card5.png';
-import permit from '../../assets/images/drawing-card5.png';
+import design from '../../assets/images/design-card6.png';
+import build from '../../assets/images/build-card6.png';
+import plan from '../../assets/images/3D-card6.png';
+import permit from '../../assets/images/drawing-card6.png';
 
 const ServicesSection = () => {
   return (
