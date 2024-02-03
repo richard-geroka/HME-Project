@@ -63,9 +63,9 @@ const ServicesSection = () => {
           </div>
         </div>
         <p className="services-p mt-5">OUR PROFESSIONAL SERVICES</p>
-        <div className="d-flex flex-column justify-content-center align-items-center">
-          <Button variant="success" size="lg" href="#contact">
-            get a quote
+        <div className="d-flex flex-column justify-content-center align-items-center mt-3">
+          <Button variant="danger" size="lg" href="#contact">
+            contact us
           </Button>
         </div>
       </section>

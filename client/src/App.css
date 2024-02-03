@@ -1,3 +1,8 @@
+/* Nav Style */
+.dg-link {
+  color: rgba(21, 64, 5, 1);
+}
+
 /* Hero Style */
 .hero {
   background-image: url('./assets/images/background-hero1.png');
@@ -85,7 +90,6 @@
   color: rgba(21, 64, 5, 1);
   text-align: center;
   font-size: 1.5rem;
-  text-decoration: underline red;
 }
 
 @media screen and (max-width: 420px) {

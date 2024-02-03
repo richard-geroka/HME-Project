@@ -25,7 +25,7 @@ const CollapsibleNavbar = () => {
               <Nav.Link href="#about" className="fw-light">
                 About Us
               </Nav.Link>
-              <Nav.Link href="#contact" className="text-success fw-bolder">
+              <Nav.Link href="#contact" className="text-danger fw-bolder">
                 Contact Us
               </Nav.Link>
             </Nav>
