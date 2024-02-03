@@ -65,7 +65,7 @@ const ServicesSection = () => {
         <p className="services-p mt-5">OUR PROFESSIONAL SERVICES</p>
         <div className="d-flex flex-column justify-content-center align-items-center mt-3">
           <Button variant="danger" size="lg" href="#contact">
-            contact us
+            Contact Us
           </Button>
         </div>
       </section>

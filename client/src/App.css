@@ -1,6 +1,6 @@
 /* Hero Style */
 .hero {
-  background-image: url('./assets/images/background-hero1.png');
+  background-image: url('./assets/images/background-hero2.png');
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
@@ -103,10 +103,16 @@
     rgba(11, 150, 8, 0.35) 45%,
     rgba(255, 255, 255, 1) 86%
   );
-  /* min-height: 80vh; */
 }
+
+.projects .projects-p {
+  color: rgba(21, 64, 5, 1);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 420px) {
   .projects {
-    padding: 1.5em;
+    padding: 1em;
   }
 }

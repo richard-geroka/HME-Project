@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import design from '../../assets/images/carousel-test.png';
+import photoism from '../../assets/images/photoism1.png';
 
 const ProjectsSection = () => {
   return (
@@ -9,27 +10,28 @@ const ProjectsSection = () => {
         <div className="d-flex flex-column justify-content-center align-items-center">
           <Carousel slide={false} data-bs-theme="dark">
             <Carousel.Item>
-              <Image src={design} fluid rounded />
-              <Carousel.Caption>
-                <h3 className="text-success">Photoism</h3>
-                <p className="text-success">SM Lanang</p>
-              </Carousel.Caption>
+              <Image
+                src={photoism}
+                fluid
+                rounded
+                className="p-lg-5 mx-lg-4 mb-5"
+              />
             </Carousel.Item>
             <Carousel.Item>
-              <Image src={design} fluid rounded />
-              <Carousel.Caption>
-                <h3 className="text-success">Photoism</h3>
-                <p className="text-success">SM Lanang</p>
-              </Carousel.Caption>
+              <Image src={photoism} fluid className="p-lg-5 mx-lg-4 mb-5" />
             </Carousel.Item>
             <Carousel.Item>
-              <Image src={design} fluid rounded />
-              <Carousel.Caption>
-                <h3 className="text-success">Photoism</h3>
-                <p className="text-success">SM Lanang</p>
-              </Carousel.Caption>
+              <Image
+                src={photoism}
+                fluid
+                rounded
+                className="p-lg-5 mx-lg-4 mb-5"
+              />
             </Carousel.Item>
           </Carousel>
+          <Button variant="danger" size="lg" className="mt-2">
+            View All Projects
+          </Button>
         </div>
       </section>
     </>
