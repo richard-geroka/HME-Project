@@ -1,5 +1,6 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
 import HeroSection from './HeroSection';
+import ProjectsSection from './ProjectsSection';
 import ServicesSection from './ServicesSection';
 
 const MainPage = () => {
@@ -13,6 +14,7 @@ const MainPage = () => {
       <main>
         <HeroSection />
         <ServicesSection />
+        <ProjectsSection />
       </main>
     </>
   );
