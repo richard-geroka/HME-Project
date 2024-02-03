@@ -95,6 +95,18 @@
 
 /* Projects Style */
 .projects {
-  /* padding: 5em; */
+  padding: 5em;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    18deg,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(11, 150, 8, 0.35) 45%,
+    rgba(255, 255, 255, 1) 86%
+  );
   /* min-height: 80vh; */
+}
+@media screen and (max-width: 420px) {
+  .projects {
+    padding: 1.5em;
+  }
 }
