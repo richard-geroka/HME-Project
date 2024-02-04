@@ -13,14 +13,11 @@
 
 .hero h1 {
   color: #fff;
-  /* border: 2px solid #fff;
-  padding: 0.75em; */
   text-shadow: 1px 1px 1px #000;
   font-weight: 600;
 }
 
 .hero p {
-  /* padding: 0.5em; */
   text-shadow: 1px 1px 1px #fff;
   font-weight: 400;
   letter-spacing: 0.2rem;

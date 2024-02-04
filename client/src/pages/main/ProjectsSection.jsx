@@ -2,6 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import photoism from '../../assets/images/photoism1.png';
+import photoismtwo from '../../assets/images/photoism2.png';
+import photoismthree from '../../assets/images/photoism3.png';
 
 const ProjectsSection = () => {
   return (
@@ -18,11 +20,11 @@ const ProjectsSection = () => {
               />
             </Carousel.Item>
             <Carousel.Item>
-              <Image src={photoism} fluid className="p-lg-5 mx-lg-4 mb-5" />
+              <Image src={photoismtwo} fluid className="p-lg-5 mx-lg-4 mb-5" />
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                src={photoism}
+                src={photoismthree}
                 fluid
                 rounded
                 className="p-lg-5 mx-lg-4 mb-5"

@@ -9,9 +9,6 @@ const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services">
-        {/* <h2 className="mb-5">
-          WHAT WE <span className="underline-do">DO</span>
-        </h2> */}
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card bg="success">
