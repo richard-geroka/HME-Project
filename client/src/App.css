@@ -87,10 +87,6 @@
   font-size: 1.75rem;
 }
 
-.text-span-green {
-  background: rgba(25, 135, 84, 1);
-}
-
 @media screen and (max-width: 420px) {
   .services {
     padding: 1em;

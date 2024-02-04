@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/esm/Button';
 import design from '../../assets/images/design-card7.png';
 import build from '../../assets/images/build-card7.png';
 import plan from '../../assets/images/3D-card7.png';
@@ -8,11 +9,9 @@ const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services">
-        <div className="text-span-green">
-          <h2 className="services-h2 mb-4 text-white">
-            OUR PROFESSIONAL SERVICES
-          </h2>
-        </div>
+        <h2 className="services-h2 mb-4 text-success">
+          OUR PROFESSIONAL SERVICES
+        </h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card bg="success">
@@ -70,6 +69,11 @@ const ServicesSection = () => {
               </Card.Body>
             </Card>
           </div>
+        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center my-5">
+          <Button variant="danger" size="lg">
+            Contact Us
+          </Button>
         </div>
       </section>
     </>
