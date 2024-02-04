@@ -25,28 +25,32 @@
 }
 
 .hero a {
-  color: rgb(72, 221, 18);
+  color: rgba(220, 53, 69, 1);
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px #fff;
   letter-spacing: 0.2rem;
 }
 
+.hero p {
+  font-size: 2rem;
+}
+
 .hero p .text-plan {
-  color: rgb(11, 186, 46);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: rgba(25, 135, 84, 1);
+  text-shadow: 1px 1px 1px #fff;
 }
 
 .hero p .text-design {
   color: #fff;
-  text-shadow: 2px 2px 2px #000000;
+  text-shadow: 1px 1px 1px #fff;
 }
 
 .hero p .text-build {
-  color: rgb(227, 37, 37);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: rgba(220, 53, 69, 1);
+  text-shadow: 1px 1px 1px #fff;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   .hero {
     padding: 10rem;
     line-height: 1.5rem;
@@ -60,7 +64,7 @@
     text-shadow: 1px 1px 1px #000;
   }
   .hero p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0.75rem;
     min-width: 360px;
     text-align: center;
