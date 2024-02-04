@@ -11,7 +11,7 @@ const ServicesSection = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card bg="success">
-              <Card.Img variant="top" src={design} />
+              <Card.Img variant="top" src={design} alt="blue print design" />
               <Card.Body className="text-light">
                 <Card.Title>Design</Card.Title>
                 <Card.Text>
@@ -23,7 +23,11 @@ const ServicesSection = () => {
           </div>
           <div className="col">
             <Card bg="success">
-              <Card.Img variant="top" src={build} />
+              <Card.Img
+                variant="top"
+                src={build}
+                alt="a building being built"
+              />
               <Card.Body className="text-light">
                 <Card.Title>Build</Card.Title>
                 <Card.Text>
@@ -35,7 +39,7 @@ const ServicesSection = () => {
           </div>
           <div className="col">
             <Card bg="success">
-              <Card.Img variant="top" src={plan} />
+              <Card.Img variant="top" src={plan} alt="3d plan of a house" />
               <Card.Body className="text-light">
                 <Card.Title>3D Plan</Card.Title>
                 <Card.Text>
@@ -47,7 +51,11 @@ const ServicesSection = () => {
           </div>
           <div className="col">
             <Card bg="success">
-              <Card.Img variant="top" src={permit} />
+              <Card.Img
+                variant="top"
+                src={permit}
+                alt="pencil on top of docs"
+              />
               <Card.Body className="text-light">
                 <Card.Title>Permit Processing</Card.Title>
                 <Card.Text>
