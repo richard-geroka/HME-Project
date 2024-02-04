@@ -101,12 +101,12 @@
 .projects {
   min-width: 100%;
   padding: 5em;
-  background: rgb(25, 135, 84);
+  /* background: rgb(25, 135, 84);
   background: radial-gradient(
     circle,
     rgba(25, 135, 84, 1) 15%,
     rgba(255, 255, 255, 1) 69%
-  );
+  ); */
 }
 
 .projects .projects-p {
@@ -134,7 +134,7 @@
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(25, 135, 84, 0.729) 33%
+    rgb(25, 135, 84) 33%
   );
   border-radius: 25px;
 }

@@ -10,7 +10,11 @@ const ProjectsSection = () => {
     <>
       <section className="projects" id="projects">
         <div className="d-flex flex-column justify-content-center align-items-center">
-          <Carousel slide={false} data-bs-theme="dark">
+          <Carousel
+            slide={false}
+            data-bs-theme="dark"
+            className="border border-3 border-success rounded"
+          >
             <Carousel.Item>
               <Image
                 src={photoism}
