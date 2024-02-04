@@ -8,6 +8,11 @@ const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services">
+        <div className="text-span-green">
+          <h2 className="services-h2 mb-4 text-white">
+            OUR PROFESSIONAL SERVICES
+          </h2>
+        </div>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card bg="success">
@@ -66,8 +71,6 @@ const ServicesSection = () => {
             </Card>
           </div>
         </div>
-        <p className="services-p mt-5">OUR PROFESSIONAL SERVICES</p>
-        <div className="d-flex flex-column justify-content-center align-items-center mt-3"></div>
       </section>
     </>
   );
