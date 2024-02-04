@@ -70,7 +70,7 @@ const ServicesSection = () => {
             </Card>
           </div>
         </div>
-        <div className="d-flex flex-column justify-content-center align-items-center my-5">
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
           <Button variant="danger" size="lg">
             Contact Us
           </Button>

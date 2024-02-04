@@ -3,7 +3,7 @@
   background-image: url('./assets/images/background-hero2.png');
   background-size: cover;
   background-position: center center;
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,18 +92,20 @@
     padding: 1em;
     min-width: 100%;
   }
+  .services .services-h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* Projects Style */
 .projects {
   min-width: 100%;
   padding: 5em;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    18deg,
-    rgba(255, 255, 255, 1) 12%,
-    rgba(25, 135, 84, 0.9024203431372549) 38%,
-    rgba(255, 255, 255, 1) 96%
+  background: rgb(25, 135, 84);
+  background: radial-gradient(
+    circle,
+    rgba(25, 135, 84, 1) 15%,
+    rgba(255, 255, 255, 1) 69%
   );
 }
 
