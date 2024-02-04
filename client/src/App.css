@@ -83,7 +83,7 @@
 }
 
 .services .services-p {
-  color: rgba(21, 64, 5, 1);
+  color: rgba(25, 135, 84, 1);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -100,9 +100,9 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(
     18deg,
-    rgba(255, 255, 255, 1) 23%,
-    rgba(11, 150, 8, 0.35) 45%,
-    rgba(255, 255, 255, 1) 86%
+    rgba(255, 255, 255, 1) 12%,
+    rgba(25, 135, 84, 0.9024203431372549) 38%,
+    rgba(255, 255, 255, 1) 96%
   );
 }
 

@@ -16,13 +16,13 @@ const CollapsibleNavbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Container>
             <Nav className="d-flex justify-content-end">
-              <Nav.Link href="#services" className="fw-light">
+              <Nav.Link href="#services" className="fw-normal text-success">
                 Services
               </Nav.Link>
-              <Nav.Link href="#projects" className="fw-light">
+              <Nav.Link href="#projects" className="fw-normal text-success">
                 Projects
               </Nav.Link>
-              <Nav.Link href="#about" className="fw-light">
+              <Nav.Link href="#about" className="fw-normal text-success">
                 About Us
               </Nav.Link>
               <Nav.Link href="#contact" className="text-danger fw-bolder">
