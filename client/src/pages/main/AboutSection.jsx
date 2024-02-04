@@ -19,7 +19,7 @@ const AboutSection = () => {
               odio, ipsa, similique exercitationem pariatur est voluptas tenetur
               recusandae sequi modi?
             </p>
-            <Button variant="danger" size="lg" className="mt-4">
+            <Button variant="danger" size="lg" className="mt-4 mb-3">
               Contact Us
             </Button>
           </div>
