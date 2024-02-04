@@ -1,9 +1,8 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import design from '../../assets/images/design-card6.png';
-import build from '../../assets/images/build-card6.png';
-import plan from '../../assets/images/3D-card6.png';
-import permit from '../../assets/images/drawing-card6.png';
+import design from '../../assets/images/design-card7.png';
+import build from '../../assets/images/build-card7.png';
+import plan from '../../assets/images/3D-card7.png';
+import permit from '../../assets/images/drawing-card7.png';
 
 const ServicesSection = () => {
   return (
@@ -60,11 +59,7 @@ const ServicesSection = () => {
           </div>
         </div>
         <p className="services-p mt-5">OUR PROFESSIONAL SERVICES</p>
-        <div className="d-flex flex-column justify-content-center align-items-center mt-3">
-          <Button variant="danger" size="lg" href="#contact">
-            Contact Us
-          </Button>
-        </div>
+        <div className="d-flex flex-column justify-content-center align-items-center mt-3"></div>
       </section>
     </>
   );
