@@ -53,6 +53,15 @@
   text-shadow: 2px 2px 1px var(--black);
 }
 
+.hero-btn {
+  border: none;
+  border-radius: 20px;
+  min-width: 150px;
+  margin-top: 1em;
+  background-color: var(--red);
+  color: var(--white);
+}
+
 /* Services Style */
 .services {
   padding: 4em;
