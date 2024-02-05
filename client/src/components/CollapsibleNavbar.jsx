@@ -4,12 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const CollapsibleNavbar = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand="lg"
-      fixed="top"
-      className="bg-body-tertiary"
-    >
+    <Navbar collapseOnSelect expand="lg" fixed="top" variant="light" bg="light">
       <Container>
         <Navbar.Brand href="#home">HME Construction Services</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -1,5 +1,3 @@
-import Button from 'react-bootstrap/Button';
-
 const HeroSection = () => {
   return (
     <>
@@ -12,12 +10,8 @@ const HeroSection = () => {
           <span className="text-design">Design.</span>{' '}
           <span className="text-build">Build.</span>
         </p>
-        <Button variant="danger" size="sm" className="mt-4">
-          projects
-        </Button>
-        {/* <a className="hero-link" href="#projects">
-          projects
-        </a> */}
+        <p className="hero-dream">Your dream into reality</p>
+        <button className="hero-btn">Learn more</button>
       </section>
     </>
   );

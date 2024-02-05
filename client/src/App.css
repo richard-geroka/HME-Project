@@ -1,80 +1,20 @@
-/* Hero Style */
 .hero {
-  background-image: url('./assets/images/background-hero2.png');
-  background-size: cover;
+  background-image: url('./assets/images/background-hero4.png');
   background-position: center center;
-  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 5rem;
+  min-height: 80vh;
+  line-height: 2rem;
 }
 
 .hero h1 {
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  font-weight: 600;
-}
-
-.hero p {
-  text-shadow: 1px 1px 1px #fff;
-  font-weight: 400;
-  letter-spacing: 0.2rem;
-  font-size: 1.5rem;
-}
-
-.hero a {
-  color: rgba(220, 53, 69, 1);
-  font-size: 1.2rem;
-  text-shadow: 1px 1px #fff;
-  letter-spacing: 0.2rem;
-}
-
-.hero p {
-  font-size: 2rem;
-}
-
-.hero p .text-plan {
-  color: rgba(25, 135, 84, 1);
-  text-shadow: 1px 1px 1px #fff;
-}
-
-.hero p .text-design {
-  color: #fff;
-  text-shadow: 1px 1px 1px #fff;
-}
-
-.hero p .text-build {
-  color: rgba(220, 53, 69, 1);
-  text-shadow: 1px 1px 1px #fff;
-}
-
-@media screen and (max-width: 420px) {
-  .hero {
-    padding: 10rem;
-    line-height: 1.5rem;
-  }
-  .hero h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0.75rem;
-    min-width: 360px;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px #000;
-  }
-  .hero p {
-    font-size: 1.5rem;
-    padding: 0.75rem;
-    min-width: 360px;
-    text-align: center;
-  }
-  .hero a {
-    font-size: 0.75rem;
-    padding: 0.75rem;
-    min-width: 360px;
-    text-align: center;
-  }
+  text-align: center;
+  font-size: 2.5rem;
+  max-width: 100%;
 }
 
 /* Services Style */
@@ -85,6 +25,7 @@
 .services .services-h2 {
   text-align: center;
   font-size: 1.75rem;
+  color: rgba(25, 135, 84, 1);
 }
 
 @media screen and (max-width: 420px) {
@@ -117,12 +58,13 @@
 
 @media screen and (max-width: 420px) {
   .projects {
-    padding: 1em;
+    padding: 2em;
   }
 }
 
 /* About us style */
 .about {
+  /* margin-top: -3rem; */
   padding: 10em;
   min-width: 100%;
 }

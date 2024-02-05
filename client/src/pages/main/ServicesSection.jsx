@@ -9,9 +9,7 @@ const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services">
-        <h2 className="services-h2 mb-4 text-success">
-          OUR PROFESSIONAL SERVICES
-        </h2>
+        <h2 className="services-h2 mb-4">OUR PROFESSIONAL SERVICES</h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <Card bg="success">
@@ -70,7 +68,7 @@ const ServicesSection = () => {
             </Card>
           </div>
         </div>
-        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+        <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
           <Button variant="danger" size="lg">
             Contact Us
           </Button>
