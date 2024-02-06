@@ -64,6 +64,32 @@
   color: var(--white);
 }
 
+@media (min-width: 768px) {
+  .hero {
+    line-height: 4rem;
+  }
+
+  .hero-btn {
+    margin-top: 0.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
 /* Services Style */
 .services {
   padding: 4em;
