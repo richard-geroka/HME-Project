@@ -92,20 +92,20 @@
 
 /* Services Style */
 .services {
-  padding: 4em;
+  padding: 1em;
+  min-width: 100%;
 }
-
 .services .services-h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 420px) {
   .services {
-    padding: 1em;
-    min-width: 100%;
+    padding: 4em;
   }
+
   .services .services-h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
