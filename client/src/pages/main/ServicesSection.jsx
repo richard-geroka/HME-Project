@@ -8,9 +8,11 @@ import permit from '../../assets/images/drawing-card7.png';
 const ServicesSection = () => {
   return (
     <>
-      <section className="services" id="services">
-        <h2 className="services-h2 mb-4">OUR PROFESSIONAL SERVICES</h2>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <section className="services" id="services" aria-label="Services">
+        <h2 className="services-h2 my-4 text-success text-center">
+          OUR PROFESSIONAL SERVICES
+        </h2>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
           <div className="col">
             <Card bg="success">
               <Card.Img variant="top" src={design} alt="blue print design" />

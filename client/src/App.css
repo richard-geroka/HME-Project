@@ -96,9 +96,7 @@
 }
 
 .services .services-h2 {
-  text-align: center;
   font-size: 1.75rem;
-  color: rgba(25, 135, 84, 1);
 }
 
 @media screen and (max-width: 420px) {
@@ -113,31 +111,21 @@
 
 /* Projects Style */
 .projects {
-  min-width: 100%;
-  padding: 5em;
-  /* background: rgb(25, 135, 84);
-  background: radial-gradient(
-    circle,
-    rgba(25, 135, 84, 1) 15%,
-    rgba(255, 255, 255, 1) 69%
-  ); */
+  padding: 2em;
 }
 
-.projects .projects-p {
-  color: rgba(21, 64, 5, 1);
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 420px) {
   .projects {
-    padding: 2em;
+    min-width: 100%;
+    padding: 5em;
+  }
+  .projects-h2 {
+    font-size: 1.75rem;
   }
 }
 
 /* About us style */
 .about {
-  /* margin-top: -3rem; */
   padding: 10em;
   min-width: 100%;
 }

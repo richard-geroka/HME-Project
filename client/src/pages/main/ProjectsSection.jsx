@@ -10,6 +10,9 @@ const ProjectsSection = () => {
     <>
       <section className="projects" id="projects">
         <div className="d-flex flex-column justify-content-center align-items-center">
+          <h2 className="projects-h2 text-center text-success my-2">
+            Our recent projects
+          </h2>
           <Carousel
             slide={false}
             data-bs-theme="dark"
