@@ -1,4 +1,5 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
+import Footer from '../../components/Footer';
 import AboutSection from './AboutSection';
 import HeroSection from './HeroSection';
 import ProjectsSection from './ProjectsSection';
@@ -17,6 +18,7 @@ const MainPage = () => {
         <ServicesSection />
         <ProjectsSection />
         <AboutSection />
+        <Footer />
       </main>
     </>
   );
