@@ -1,4 +1,5 @@
 import teampic from '../../assets/images/hmeteam.png';
+import HoverButtonLink from '../../components/HoverButtonLink';
 
 const AboutSection = () => {
   return (
@@ -23,7 +24,11 @@ const AboutSection = () => {
               unde delectus quos molestiae autem laboriosam culpa
               exercitationem.
             </p>
-            <button className="about-btn">Contact us</button>
+            <HoverButtonLink
+              className={'hero-btn'}
+              link={'#contact'}
+              content={'Contact us'}
+            />
           </div>
         </div>
       </section>
