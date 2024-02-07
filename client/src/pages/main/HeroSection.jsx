@@ -1,3 +1,5 @@
+import HoverButtonLink from '../../components/HoverButtonLink';
+
 const HeroSection = () => {
   return (
     <>
@@ -11,7 +13,11 @@ const HeroSection = () => {
           <span className="text-build">Build.</span>
         </p>
         <p className="hero-dream">Your dream into reality</p>
-        <button className="hero-btn">Learn more</button>
+        <HoverButtonLink
+          link={'#projects'}
+          content={'Learn more'}
+          className="hero-btn"
+        />
       </section>
     </>
   );
