@@ -4,6 +4,7 @@ import design from '../../assets/images/design-card7.png';
 import build from '../../assets/images/build-card7.png';
 import plan from '../../assets/images/3D-card7.png';
 import permit from '../../assets/images/drawing-card7.png';
+import HoverButtonLink from '../../components/HoverButtonLink';
 
 const ServicesSection = () => {
   return (
@@ -71,9 +72,11 @@ const ServicesSection = () => {
           </div>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
-          <Button variant="danger" size="lg">
-            Contact Us
-          </Button>
+          <HoverButtonLink
+            className={'hero-btn'}
+            link={'contact'}
+            content={'Contact us'}
+          />
         </div>
       </section>
     </>
