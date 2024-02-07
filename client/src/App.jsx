@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/main/MainPage';
 import ServicePage from './pages/services/ServicePage';

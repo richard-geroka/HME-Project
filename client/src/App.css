@@ -37,7 +37,7 @@
 
 .hero .text-plan {
   color: var(--green);
-  text-shadow: 2px 2px 1px var(--black);
+  text-shadow: 2px 2px 1px var(--white);
 }
 
 .hero .text-design {
@@ -47,7 +47,7 @@
 
 .hero .text-build {
   color: var(--red);
-  text-shadow: 2px 2px 1px var(--black);
+  text-shadow: 2px 2px 1px var(--white);
 }
 
 .hero .hero-dream {
@@ -75,18 +75,15 @@
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    min-height: 80vh;
-  }
-
   .hero h1 {
     font-size: 3rem;
     letter-spacing: 0.2rem;
   }
 
   .hero p {
-    font-size: 2rem;
+    font-size: 2.4rem;
     letter-spacing: 0.2rem;
+    font-weight: 600;
   }
 }
 
