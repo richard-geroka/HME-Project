@@ -5,6 +5,7 @@ import photoism from '../../assets/images/photoism1.png';
 import photoismtwo from '../../assets/images/photoism2.png';
 import photoismthree from '../../assets/images/photoism3.png';
 import CarouselCaption from 'react-bootstrap/esm/CarouselCaption';
+import HoverButtonLink from '../../components/HoverButtonLink';
 
 const ProjectsSection = () => {
   return (
@@ -49,9 +50,11 @@ const ProjectsSection = () => {
               </CarouselCaption>
             </Carousel.Item>
           </Carousel>
-          <Button variant="danger" size="lg" className="mt-2">
-            View All Projects
-          </Button>
+          <HoverButtonLink
+            className={'hero-btn'}
+            link={'#'}
+            content={'View all projects'}
+          />
         </div>
       </section>
     </>
