@@ -1,4 +1,4 @@
-import teampic from '../../assets/images/hmeteam.png';
+import teampic from '../../assets/images/hmeteam1.png';
 import HoverButtonLink from '../../components/HoverButtonLink';
 
 const AboutSection = () => {
