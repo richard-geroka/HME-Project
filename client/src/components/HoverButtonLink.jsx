@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 /* eslint-disable react/prop-types */
-const HoverButtonLink = ({ link, content }) => {
+const HoverButtonLink = ({ link, content, className }) => {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseOver = () => {
@@ -12,7 +12,12 @@ const HoverButtonLink = ({ link, content }) => {
   };
 
   return (
-    <a href={link} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+    <a
+      href={link}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+      className={className}
+    >
       {content} {isHovering && <i className="bi bi-arrow-right"></i>}
     </a>
   );
