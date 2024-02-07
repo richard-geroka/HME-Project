@@ -10,7 +10,7 @@ const ServicesSection = () => {
     <>
       <section className="services" id="services" aria-label="Services">
         <h2 className="services-h2 my-4 text-success text-center">
-          OUR PROFESSIONAL SERVICES
+          Our professional services -
         </h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
           <div className="col">
