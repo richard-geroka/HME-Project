@@ -10,42 +10,40 @@ const ProjectsSection = () => {
   return (
     <>
       <section className="projects" id="projects">
-        <div className="d-flex flex-column justify-content-center align-items-center">
-          <h2 className="projects-h2 text-center text-success my-2">
-            Our recent projects
+        <div className="wrapper d-flex flex-column justify-content-center align-items-center">
+          <h2 className="projects-h2 text-center text-success mb-2">
+            Our recent projects -
           </h2>
           <Carousel
             slide={false}
             data-bs-theme="dark"
-            className="border border-3 border-success rounded"
+            className="border border-3 border-success"
             interval={1000}
           >
             <Carousel.Item>
               <Image
                 src={photoism}
                 fluid
-                rounded
-                className="p-lg-5 mx-lg-4 mb-5"
+                // className="p-lg-5 mx-lg-4 mb-5"
               />
               <CarouselCaption>
-                <p className="mt-3 fs-1 fw-bold">PHOTOISM</p>
+                <p className="fs-4 fw-bold">PHOTOISM</p>
               </CarouselCaption>
             </Carousel.Item>
             <Carousel.Item>
-              <Image src={photoismtwo} fluid className="p-lg-5 mx-lg-4 mb-5" />
+              <Image src={photoismtwo} fluid />
               <CarouselCaption>
-                <p className="mt-3 fs-1 fw-bold">PHOTOISM</p>
+                <p className="fs-4 fw-bold">PHOTOISM</p>
               </CarouselCaption>
             </Carousel.Item>
             <Carousel.Item>
               <Image
                 src={photoismthree}
                 fluid
-                rounded
-                className="p-lg-5 mx-lg-4 mb-5"
+                // className="p-lg-5 mx-lg-4 mb-5"
               />
               <CarouselCaption>
-                <p className="mt-3 fs-1 fw-bold">PHOTOISM</p>
+                <p className="fs-4 fw-bold">PHOTOISM</p>
               </CarouselCaption>
             </Carousel.Item>
           </Carousel>
