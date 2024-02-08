@@ -11,9 +11,9 @@ const ServicePage = () => {
         </nav>
       </header>
       <main>
-        <section>
-          <ServicesSection />
-        </section>
+        <div className="mt-5">
+          <ServicesSection checkIsMain={'false'} />
+        </div>
       </main>
       <Footer />
     </>

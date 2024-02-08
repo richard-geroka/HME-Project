@@ -1,18 +1,28 @@
+/* eslint-disable react/prop-types */
 import Card from 'react-bootstrap/Card';
 import design from '../../assets/images/design-card7.png';
 import build from '../../assets/images/build-card7.png';
 import plan from '../../assets/images/3D-card7.png';
 import permit from '../../assets/images/drawing-card7.png';
 import HoverButtonLink from '../../components/HoverButtonLink';
+import { useState } from 'react';
 
-const ServicesSection = () => {
+const ServicesSection = ({ checkIsMain }) => {
+  const [isMain, setIsMain] = useState(null);
+
+  if (checkIsMain === 'true') {
+    setIsMain(true);
+  }
   return (
     <>
       <section className="services" id="services" aria-label="Services">
         <div className="wrapper">
-          <h2 className="services-h2 my-4 text-success text-center">
-            Our professional services -
-          </h2>
+          {isMain ? (
+            <h2 className="services-h2 my-4 text-success text-center">
+              Our professional services -
+            </h2>
+          ) : undefined}
+
           <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
             <div className="col">
               <Card bg="success">
