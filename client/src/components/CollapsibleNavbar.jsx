@@ -22,21 +22,21 @@ const CollapsibleNavbar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="/#services"
+                href="/services"
                 className="fw-normal fs-5 text-success"
               >
                 Services
               </Nav.Link>
               <Nav.Link
-                href="/#projects"
+                href="/projects"
                 className="fw-normal fs-5 text-success"
               >
                 Projects
               </Nav.Link>
-              <Nav.Link href="/#about" className="fw-normal fs-5 text-success">
+              <Nav.Link href="/about" className="fw-normal fs-5 text-success">
                 About Us
               </Nav.Link>
-              <Nav.Link href="/#contact" className="text-danger fs-5 fw-bolder">
+              <Nav.Link href="/contact" className="text-danger fs-5 fw-bolder">
                 Contact Us
               </Nav.Link>
             </Nav>
