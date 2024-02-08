@@ -181,3 +181,30 @@
     line-height: 2rem;
   }
 }
+
+/* Contact style */
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.contact h3 {
+  margin-bottom: 0.5em;
+}
+
+.contact-container-grid {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .contact-container-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact h2 {
+    text-align: center;
+  }
+}
