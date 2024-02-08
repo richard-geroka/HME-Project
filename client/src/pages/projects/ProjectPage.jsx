@@ -10,10 +10,9 @@ const ProjectPage = () => {
         </nav>
       </header>
       <main>
-        <section>
-          <Footer />
-        </section>
+        <section></section>
       </main>
+      <Footer />
     </>
   );
 };
