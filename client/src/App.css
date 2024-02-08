@@ -193,6 +193,11 @@
   margin-bottom: 0.5em;
 }
 
+.contact a {
+  text-decoration: none;
+  color: #000;
+}
+
 .contact-container-grid {
   margin-top: 2em;
   display: grid;
