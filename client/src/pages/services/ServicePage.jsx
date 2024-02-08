@@ -1,6 +1,7 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
 import Footer from '../../components/Footer';
 import ServicesSection from '../main/ServicesSection';
+import ServiceHero from './ServiceHero';
 
 const ServicePage = () => {
   return (
@@ -12,6 +13,7 @@ const ServicePage = () => {
       </header>
       <main>
         <div className="service-page-container">
+          <ServiceHero />
           <ServicesSection checkIsMain={'false'} />
         </div>
       </main>
