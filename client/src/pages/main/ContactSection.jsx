@@ -1,7 +1,11 @@
 const ContactSection = () => {
   return (
     <>
-      <div>Hello, World</div>
+      <section className="contact" id="contact">
+        <div className="wrapper">
+          <h2>Get in touch -</h2>
+        </div>
+      </section>
     </>
   );
 };
