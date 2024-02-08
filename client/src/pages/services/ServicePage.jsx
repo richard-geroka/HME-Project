@@ -11,7 +11,7 @@ const ServicePage = () => {
         </nav>
       </header>
       <main>
-        <div className="mt-5">
+        <div className="service-page-container">
           <ServicesSection checkIsMain={'false'} />
         </div>
       </main>
