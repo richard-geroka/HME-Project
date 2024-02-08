@@ -5,14 +5,16 @@ import build from '../../assets/images/build-card7.png';
 import plan from '../../assets/images/3D-card7.png';
 import permit from '../../assets/images/drawing-card7.png';
 import HoverButtonLink from '../../components/HoverButtonLink';
-import { useState } from 'react';
 
 const ServicesSection = ({ checkIsMain }) => {
-  const [isMain, setIsMain] = useState(null);
+  let isMain;
 
   if (checkIsMain === 'true') {
-    setIsMain(true);
+    isMain = true;
+  } else {
+    isMain = false;
   }
+
   return (
     <>
       <section className="services" id="services" aria-label="Services">

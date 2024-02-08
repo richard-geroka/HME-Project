@@ -16,7 +16,7 @@ const MainPage = () => {
       </header>
       <main>
         <HeroSection />
-        <ServicesSection />
+        <ServicesSection checkIsMain={'true'} />
         <ProjectsSection />
         <AboutSection />
         <ContactSection />
