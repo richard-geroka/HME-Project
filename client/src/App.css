@@ -18,15 +18,25 @@
 
 /* Hero Style */
 .hero {
-  background-image: url('./assets/images/background-hero4.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 70vh;
+}
+
+.hero::after {
+  content: '';
+  background-image: url('./assets/images/background-hero4.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
 }
 
 .hero-text-content {
@@ -90,6 +100,12 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .hero {
+    min-height: 60vh;
+  }
+}
+
 @media (min-width: 1200px) {
   .hero h1 {
     font-size: 3rem;
@@ -105,13 +121,25 @@
 
 /* About us style */
 .about {
+  --skew-angle: -5deg;
+
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 3em;
   gap: 1rem;
-  background-color: var(--green);
+}
+
+.about::after {
+  content: '';
+  background: var(--green);
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(var(--skew-angle));
 }
 
 .about-container-grid {

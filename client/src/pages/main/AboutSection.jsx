@@ -16,15 +16,8 @@ const AboutSection = () => {
                 We are a team of architects, engineers and builders. We will
                 build your dream into reality.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis deleniti possimus saepe animi dolor dicta magni modi.
-              </p>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempore unde delectus quos molestiae autem laboriosam culpa
-                exercitationem.
-              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               <HoverButtonLink
                 className={'hero-btn'}
                 link={'#contact'}
