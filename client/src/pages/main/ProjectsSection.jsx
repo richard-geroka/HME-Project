@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import photoism from '../../assets/images/photoism1.png';
 import photoismtwo from '../../assets/images/photoism2.png';
@@ -47,14 +47,9 @@ const ProjectsSection = () => {
               </CarouselCaption>
             </Carousel.Item>
           </Carousel>
-          <Link to={'/projects'} className="hero-btn">
+          <Link to={'/projects'} className={'hero-btn'}>
             View all projects
           </Link>
-          {/* <HoverButtonLink
-            className={'hero-btn'}
-            link={'#'}
-            content={'View all projects'}
-          /> */}
         </div>
       </section>
     </>
