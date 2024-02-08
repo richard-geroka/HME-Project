@@ -1,10 +1,10 @@
+import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import photoism from '../../assets/images/photoism1.png';
 import photoismtwo from '../../assets/images/photoism2.png';
 import photoismthree from '../../assets/images/photoism3.png';
 import CarouselCaption from 'react-bootstrap/esm/CarouselCaption';
-import HoverButtonLink from '../../components/HoverButtonLink';
 
 const ProjectsSection = () => {
   return (
@@ -47,11 +47,14 @@ const ProjectsSection = () => {
               </CarouselCaption>
             </Carousel.Item>
           </Carousel>
-          <HoverButtonLink
+          <Link to={'/projects'} className="hero-btn">
+            View all projects
+          </Link>
+          {/* <HoverButtonLink
             className={'hero-btn'}
             link={'#'}
             content={'View all projects'}
-          />
+          /> */}
         </div>
       </section>
     </>
