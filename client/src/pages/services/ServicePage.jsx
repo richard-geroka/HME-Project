@@ -15,21 +15,17 @@ const ServicePage = () => {
       </header>
       <main>
         <ServiceHero />
-        <div className="wrapper">
-          <section aria-label="Services info">
-            <ServiceCards isMainPage={'false'} />
-            <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
-              <HoverButtonLink
-                className={'hero-btn'}
-                link={'/contact'}
-                content={'Get a quote'}
-              />
-            </div>
-          </section>
-          <section>
-            <WhyOurServices />
-          </section>
-        </div>
+        <section aria-label="Services info" className="wrapper">
+          <ServiceCards isMainPage={'false'} />
+          <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
+            <HoverButtonLink
+              className={'hero-btn'}
+              link={'/contact'}
+              content={'Get a quote'}
+            />
+          </div>
+        </section>
+        <WhyOurServices />
       </main>
       <Footer />
     </>
