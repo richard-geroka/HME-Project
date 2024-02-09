@@ -9,7 +9,18 @@ const WhyOurServices = () => {
           <div className="services-image-col">
             <img src={handshake} alt="People shaking hand" />
           </div>
-          <div className="services-text-col"></div>
+          <div className="services-text-col">
+            <p>
+              We strive to provide our clients with honest and excellent
+              services.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+              quaerat! Culpa inventore facere perspiciatis optio nihil itaque
+              numquam quidem unde reprehenderit dolorum? Nobis dolorum, rem
+              temporibus corrupti est blanditiis illo?
+            </p>
+          </div>
         </div>
       </div>
     </>
