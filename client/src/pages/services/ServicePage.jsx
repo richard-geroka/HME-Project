@@ -13,8 +13,8 @@ const ServicePage = () => {
         </nav>
       </header>
       <main>
+        <ServiceHero />
         <div className="wrapper">
-          <ServiceHero />
           <ServiceCards isMainPage={'false'} />
           <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
             <HoverButtonLink

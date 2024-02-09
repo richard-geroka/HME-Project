@@ -215,3 +215,31 @@
     text-align: center;
   }
 }
+
+/* SERVICE PAGE STYLE */
+.service-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.service-hero::after {
+  content: '';
+  background-image: url('./assets/images/service-hero-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+}
+
+.service-hero h2 {
+  color: var(--white);
+  text-shadow: 2px 2px 1px var(--black);
+}
