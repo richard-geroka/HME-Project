@@ -15,7 +15,7 @@ const ServiceCards = ({ isMainPage }) => {
   }
   return (
     <>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
         <div className="col">
           <Card bg="success">
             <Card.Img variant="top" src={design} alt="blue print design" />
@@ -52,18 +52,58 @@ const ServiceCards = ({ isMainPage }) => {
             </Card.Body>
           </Card>
         </div>
-        <div className="col">
-          <Card bg="success">
-            <Card.Img variant="top" src={permit} alt="pencil on top of docs" />
-            <Card.Body className="text-light">
-              <Card.Title>Permit Processing</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
+        {!isMain ? (
+          <>
+            <div className="col">
+              <Card bg="success">
+                <Card.Img
+                  variant="top"
+                  src={permit}
+                  alt="pencil on top of docs"
+                />
+                <Card.Body className="text-light">
+                  <Card.Title>Permit Processing</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the cards content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col">
+              <Card bg="success">
+                <Card.Img
+                  variant="top"
+                  src={permit}
+                  alt="pencil on top of docs"
+                />
+                <Card.Body className="text-light">
+                  <Card.Title>Renovation</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the cards content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col">
+              <Card bg="success">
+                <Card.Img
+                  variant="top"
+                  src={permit}
+                  alt="pencil on top of docs"
+                />
+                <Card.Body className="text-light">
+                  <Card.Title>Fit-out Works</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make
+                    up the bulk of the cards content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          </>
+        ) : undefined}
       </div>
     </>
   );
