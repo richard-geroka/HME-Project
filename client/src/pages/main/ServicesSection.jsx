@@ -15,7 +15,7 @@ const ServicesSection = ({ btnContent }) => {
             <HoverButtonLink
               className={'hero-btn'}
               link={'/services'}
-              content={btnContent}
+              content={'View all services'}
             />
           </div>
         </div>
