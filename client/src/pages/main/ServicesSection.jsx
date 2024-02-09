@@ -1,4 +1,5 @@
 import HoverButtonLink from '../../components/HoverButtonLink';
+import ServiceCards from '../../components/ServiceCards';
 
 const ServicesSection = () => {
   return (
@@ -8,6 +9,7 @@ const ServicesSection = () => {
           <h2 className="services-h2 my-4 text-success text-center">
             Our professional services -
           </h2>
+          <ServiceCards />
           <div className="d-flex flex-column justify-content-center align-items-center my-3 mt-lg-5">
             <HoverButtonLink
               className={'hero-btn'}
