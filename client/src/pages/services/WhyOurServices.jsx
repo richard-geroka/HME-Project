@@ -1,4 +1,5 @@
 import handshake from '../../assets/images/handshake.png';
+import HoverButtonLink from '../../components/HoverButtonLink';
 
 const WhyOurServices = () => {
   return (
@@ -21,6 +22,11 @@ const WhyOurServices = () => {
                 numquam quidem unde reprehenderit dolorum? Nobis dolorum, rem
                 temporibus corrupti est blanditiis illo?
               </p>
+              <HoverButtonLink
+                className={'hero-btn'}
+                link={'/contact'}
+                content={'Contact us'}
+              />
             </div>
           </div>
         </div>
