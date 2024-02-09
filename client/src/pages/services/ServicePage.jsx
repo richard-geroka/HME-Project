@@ -12,7 +12,7 @@ const ServicePage = () => {
         </nav>
       </header>
       <main>
-        <div className="service-page-container m-2">
+        <div className="wrapper">
           <ServiceHero />
           <ServiceCards isMainPage={'false'} />
         </div>

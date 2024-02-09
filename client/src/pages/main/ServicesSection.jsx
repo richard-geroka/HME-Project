@@ -2,7 +2,7 @@
 import HoverButtonLink from '../../components/HoverButtonLink';
 import ServiceCards from '../../components/ServiceCards';
 
-const ServicesSection = ({ btnContent }) => {
+const ServicesSection = () => {
   return (
     <>
       <section className="services" id="services" aria-label="Services">
