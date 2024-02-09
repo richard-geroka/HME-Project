@@ -4,6 +4,8 @@ import design from '../assets/images/design-card7.png';
 import build from '../assets/images/build-card7.png';
 import plan from '../assets/images/3D-card7.png';
 import permit from '../assets/images/drawing-card7.png';
+import renovation from '../assets/images/renovation-card7.png';
+import fitout from '../assets/images/fitout-card7.png';
 
 const ServiceCards = ({ isMainPage }) => {
   let isMain;
@@ -74,7 +76,7 @@ const ServiceCards = ({ isMainPage }) => {
               <Card bg="success">
                 <Card.Img
                   variant="top"
-                  src={permit}
+                  src={renovation}
                   alt="pencil on top of docs"
                 />
                 <Card.Body className="text-light">
@@ -90,7 +92,7 @@ const ServiceCards = ({ isMainPage }) => {
               <Card bg="success">
                 <Card.Img
                   variant="top"
-                  src={permit}
+                  src={fitout}
                   alt="pencil on top of docs"
                 />
                 <Card.Body className="text-light">
