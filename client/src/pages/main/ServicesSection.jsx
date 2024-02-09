@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import HoverButtonLink from '../../components/HoverButtonLink';
 import ServiceCards from '../../components/ServiceCards';
 
-const ServicesSection = () => {
+const ServicesSection = ({ btnContent }) => {
   return (
     <>
       <section className="services" id="services" aria-label="Services">
@@ -14,7 +15,7 @@ const ServicesSection = () => {
             <HoverButtonLink
               className={'hero-btn'}
               link={'/services'}
-              content={'View all service'}
+              content={btnContent}
             />
           </div>
         </div>
