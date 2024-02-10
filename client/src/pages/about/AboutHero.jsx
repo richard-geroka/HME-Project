@@ -1,7 +1,11 @@
 const AboutHero = () => {
   return (
     <>
-      <div>Hello, World!</div>
+      <section className="about-hero">
+        <div className="wrapper">
+          <h2>About Us -</h2>
+        </div>
+      </section>
     </>
   );
 };
