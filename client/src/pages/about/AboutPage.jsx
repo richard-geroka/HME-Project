@@ -1,5 +1,6 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
 import Footer from '../../components/Footer';
+import AboutHero from './AboutHero';
 
 const AboutPage = () => {
   return (
@@ -9,7 +10,9 @@ const AboutPage = () => {
           <CollapsibleNavbar />
         </nav>
       </header>
-      <main></main>
+      <main>
+        <AboutHero />
+      </main>
       <Footer />
     </>
   );
