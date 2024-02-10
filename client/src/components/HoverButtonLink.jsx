@@ -13,14 +13,14 @@ const HoverButtonLink = ({ link, content, className }) => {
   };
 
   return (
-    <a
-      href={link}
+    <Link
+      to={link}
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
       className={className}
     >
       {content} {isHovering && <i className="bi bi-arrow-right"></i>}
-    </a>
+    </Link>
   );
 };
 
