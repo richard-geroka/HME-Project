@@ -20,7 +20,7 @@ const AboutSection = () => {
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               <HoverButtonLink
                 className={'hero-btn'}
-                link={'#contact'}
+                link={'/contact'}
                 content={'Contact us'}
               />
             </div>
