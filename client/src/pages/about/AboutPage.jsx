@@ -1,4 +1,5 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
+import Footer from '../../components/Footer';
 
 const AboutPage = () => {
   return (
@@ -8,6 +9,8 @@ const AboutPage = () => {
           <CollapsibleNavbar />
         </nav>
       </header>
+      <main></main>
+      <Footer />
     </>
   );
 };
