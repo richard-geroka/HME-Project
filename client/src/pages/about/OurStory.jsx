@@ -1,3 +1,5 @@
+import ourStoryImage from '../../assets/images/ourstory.png';
+
 const OurStory = () => {
   return (
     <>
@@ -5,7 +7,9 @@ const OurStory = () => {
         <div className="wrapper">
           <h2>Our Story</h2>
           <div className="our-story-grid">
-            <div className="our-story-image"></div>
+            <div className="our-story-image">
+              <img src={ourStoryImage} alt="A man writing" />
+            </div>
             <div className="our-story-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
