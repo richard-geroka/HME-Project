@@ -1,7 +1,9 @@
+import AboutSection from '../main/AboutSection';
+
 const MeetOurTeam = () => {
   return (
     <>
-      <div>Hello, World!</div>
+      <AboutSection />
     </>
   );
 };
