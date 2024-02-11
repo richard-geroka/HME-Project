@@ -165,7 +165,7 @@
   margin-bottom: 1em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .about-container-grid {
     padding: 3em;
     display: grid;
@@ -291,7 +291,7 @@
   margin-bottom: 1em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .our-services-grid {
     padding: 3em;
     display: grid;
@@ -336,4 +336,54 @@
 .about-hero h2 {
   color: var(--white);
   text-shadow: 2px 2px 1px var(--black);
+}
+
+/* Our Story style */
+.about-our-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  gap: 1rem;
+}
+
+.our-story-grid {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  place-items: center;
+}
+
+.about-our-story h3 {
+  color: var(--green);
+  font-size: 1.5rem;
+  text-align: start;
+  text-decoration: underline var(--red);
+  margin-bottom: 1em;
+}
+
+.about-our-story p {
+  color: var(--green);
+  max-width: 500px;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 900px) {
+  .our-story-grid {
+    padding: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
+    gap: 2rem;
+  }
+  .about-our-story h3 {
+    font-size: 1.75rem;
+  }
+
+  .about-our-story p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }

@@ -17,7 +17,7 @@ const ServiceCards = ({ isMainPage }) => {
   }
   return (
     <>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
         <div className="col">
           <Card bg="success">
             <Card.Img variant="top" src={design} alt="blue print design" />

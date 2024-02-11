@@ -6,12 +6,13 @@ const OurStory = () => {
     <>
       <section className="about-our-story">
         <div className="wrapper">
-          <h2>Our story and our core values</h2>
+          {/* <h2>Our story and our core values</h2> */}
           <div className="our-story-grid">
             <div className="our-story-image">
               <img src={ourStoryImage} alt="A man writing" />
             </div>
             <div className="our-story-text">
+              <h3>Our Story</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Explicabo voluptate distinctio ducimus nobis ipsa quae, nemo
@@ -23,6 +24,7 @@ const OurStory = () => {
               <img src={corevalues} alt="team holding hands" />
             </div>
             <div className="our-story-text">
+              <h3>Our Values</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 corrupti nostrum dolor eligendi illo, veritatis reiciendis fuga
