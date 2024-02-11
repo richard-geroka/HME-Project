@@ -1,7 +1,13 @@
+import CollapsibleNavbar from '../../components/CollapsibleNavbar';
+
 const ContactPage = () => {
   return (
     <>
-      <div>Hello, World!</div>
+      <header>
+        <nav>
+          <CollapsibleNavbar />
+        </nav>
+      </header>
     </>
   );
 };
