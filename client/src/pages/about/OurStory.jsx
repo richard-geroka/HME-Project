@@ -24,7 +24,7 @@ const OurStory = () => {
               <img src={corevalues} alt="team holding hands" />
             </div>
             <div className="our-story-text">
-              <h3>Our Values</h3>
+              <h3>Our Mission</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 corrupti nostrum dolor eligendi illo, veritatis reiciendis fuga
