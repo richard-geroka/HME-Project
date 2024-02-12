@@ -23,6 +23,22 @@ const upload = multer({
 
 export const uploadProjectImages = upload.array('photos', 10);
 
+export const resizeImages = catchAsync(async (req, res, next) => {
+  if (!req.files) return next();
+  req.body.photos = [];
+  await Promise.all(
+    req.files.photos.map(async (file, i) => {
+      const fileName = `projects-${req.user.id}-${Date.now()}-${i + 1}.jpeg`;
+
+      await sharp(req.files.photos.buffer)
+        .resize(400, 350, { fit: 'fill' })
+        .toFormat('jpeg')
+        .jpeg({ quality: 90 })
+        .toFile(`../public/images/${fileName}`);
+    }),
+  );
+});
+
 export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
     projectName: req.body.projectName,
