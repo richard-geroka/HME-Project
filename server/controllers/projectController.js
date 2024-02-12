@@ -16,6 +16,11 @@ const multerFilter = (req, file, cb) => {
   }
 };
 
+const upload = multer({
+  storage: multerStorage,
+  fileFilter: multerFilter,
+});
+
 export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
     projectName: req.body.projectName,
