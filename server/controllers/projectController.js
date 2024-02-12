@@ -8,6 +8,14 @@ import AppError from '../utils/appError.js';
 
 const multerStorage = multer.memoryStorage();
 
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Please upload images only', 400), false);
+  }
+};
+
 export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
     projectName: req.body.projectName,
