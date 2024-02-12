@@ -207,7 +207,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  place-items: center;
 }
 
 @media (min-width: 900px) {
