@@ -1,10 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import photoism from '../../assets/images/photoism1.png';
 import photoismtwo from '../../assets/images/photoism2.png';
 import photoismthree from '../../assets/images/photoism3.png';
 import CarouselCaption from 'react-bootstrap/esm/CarouselCaption';
+import HoverButtonLink from '../../components/HoverButtonLink';
 
 const ProjectsSection = () => {
   return (
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
           <Carousel
             slide={false}
             data-bs-theme="dark"
-            className="border border-3 border-success"
+            className="border border-3 border-success mb-3"
             interval={1000}
           >
             <Carousel.Item>
@@ -47,9 +47,11 @@ const ProjectsSection = () => {
               </CarouselCaption>
             </Carousel.Item>
           </Carousel>
-          <Link to={'/projects'} className={'hero-btn'}>
-            View all projects
-          </Link>
+          <HoverButtonLink
+            link={'/projects'}
+            content={'View all projects'}
+            className={'hero-btn'}
+          />
         </div>
       </section>
     </>
