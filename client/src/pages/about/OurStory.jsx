@@ -6,7 +6,6 @@ const OurStory = () => {
     <>
       <section className="about-our-story">
         <div className="wrapper">
-          {/* <h2>Our story and our core values</h2> */}
           <div className="our-story-grid">
             <div className="our-story-image">
               <img src={ourStoryImage} alt="A man writing" />

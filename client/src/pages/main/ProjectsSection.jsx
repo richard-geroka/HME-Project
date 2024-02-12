@@ -21,11 +21,7 @@ const ProjectsSection = () => {
             interval={1000}
           >
             <Carousel.Item>
-              <Image
-                src={photoism}
-                fluid
-                // className="p-lg-5 mx-lg-4 mb-5"
-              />
+              <Image src={photoism} fluid />
               <CarouselCaption>
                 <p className="fs-4 fw-bold">PHOTOISM</p>
               </CarouselCaption>
@@ -37,11 +33,7 @@ const ProjectsSection = () => {
               </CarouselCaption>
             </Carousel.Item>
             <Carousel.Item>
-              <Image
-                src={photoismthree}
-                fluid
-                // className="p-lg-5 mx-lg-4 mb-5"
-              />
+              <Image src={photoismthree} fluid />
               <CarouselCaption>
                 <p className="fs-4 fw-bold">PHOTOISM</p>
               </CarouselCaption>
