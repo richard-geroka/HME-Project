@@ -30,11 +30,13 @@ export const resizeImages = catchAsync(async (req, res, next) => {
     req.files.photos.map(async (file, i) => {
       const fileName = `projects-${req.user.id}-${Date.now()}-${i + 1}.jpeg`;
 
-      await sharp(req.files.photos.buffer)
+      await sharp(file.buffer)
         .resize(400, 350, { fit: 'fill' })
         .toFormat('jpeg')
         .jpeg({ quality: 90 })
         .toFile(`../public/images/${fileName}`);
+
+      req.body.photos.push(fileName);
     }),
   );
 });
