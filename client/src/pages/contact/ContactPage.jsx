@@ -1,5 +1,6 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
 import Footer from '../../components/Footer';
+import ContactHero from './ContactHero';
 
 const ContactPage = () => {
   return (
@@ -9,7 +10,9 @@ const ContactPage = () => {
           <CollapsibleNavbar />
         </nav>
       </header>
-      <section></section>
+      <main>
+        <ContactHero />
+      </main>
       <Footer />
     </>
   );
