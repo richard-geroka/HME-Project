@@ -39,6 +39,8 @@ export const resizeImages = catchAsync(async (req, res, next) => {
       req.body.photos.push(fileName);
     }),
   );
+
+  next();
 });
 
 export const addProject = catchAsync(async (req, res, next) => {
