@@ -4,6 +4,7 @@ import {
   addProject,
   deleteProject,
   getProjects,
+  resizeImages,
   updateProject,
   uploadProjectImages,
 } from '../controllers/projectController.js';
@@ -14,7 +15,10 @@ const router = express.Router();
 // Protect routes below
 router.use(protectRoute);
 
-router.route('/').post(uploadProjectImages, addProject).get(getProjects);
+router
+  .route('/')
+  .post(uploadProjectImages, resizeImages, addProject)
+  .get(getProjects);
 
 router.route('/:id').patch(updateProject).delete(deleteProject);
 
