@@ -1,9 +1,12 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
 import multer from 'multer';
 import sharp from 'sharp';
 import Project from '../models/projectModel.js';
 import catchAsync from '../utils/catchAsync.js';
 import AppError from '../utils/appError.js';
+
+const multerStorage = multer.memoryStorage();
 
 export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
