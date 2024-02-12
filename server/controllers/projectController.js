@@ -21,6 +21,8 @@ const upload = multer({
   fileFilter: multerFilter,
 });
 
+export const uploadProjectImages = upload.array('photos', 10);
+
 export const addProject = catchAsync(async (req, res, next) => {
   const newProject = await Project.create({
     projectName: req.body.projectName,
