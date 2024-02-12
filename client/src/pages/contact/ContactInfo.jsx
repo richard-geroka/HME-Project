@@ -1,7 +1,7 @@
 const ContactInfo = () => {
   return (
     <>
-      <section className="contact-info">
+      <section className="contact">
         <div className="wrapper">
           <h2>For pricing and other inquiries, please contact us via</h2>
           <div className="contact-container-grid">
