@@ -1,7 +1,11 @@
 const ProjectHero = () => {
   return (
     <>
-      <div>Hello, World!</div>
+      <section className="project-hero">
+        <div className="wrapper">
+          <h2>Our projects -</h2>
+        </div>
+      </section>
     </>
   );
 };
