@@ -1,5 +1,6 @@
 import CollapsibleNavbar from '../../components/CollapsibleNavbar';
 import Footer from '../../components/Footer';
+import ProjectHero from './ProjectHero';
 
 const ProjectPage = () => {
   return (
@@ -10,7 +11,7 @@ const ProjectPage = () => {
         </nav>
       </header>
       <main>
-        <section></section>
+        <ProjectHero />
       </main>
       <Footer />
     </>
