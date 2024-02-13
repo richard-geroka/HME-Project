@@ -489,3 +489,28 @@
   color: var(--white);
   text-shadow: 2px 2px 1px var(--black);
 }
+
+/* PROJECT PAGE STYLE */
+
+/* Hero section style */
+.project-hero {
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.project-hero::after {
+  content: '';
+  background-image: url('./assets/images/project-hero.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+}
