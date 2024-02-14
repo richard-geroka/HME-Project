@@ -4,10 +4,23 @@ import axios from 'axios';
 const Auth = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('http://localhost:3000/api/user/login', {
+        username,
+        password,
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <>
       <div className="auth-container">
-        <form>
+        <form onSubmit={onSubmit}>
           <label htmlFor="username">username</label>
           <input
             type="text"
