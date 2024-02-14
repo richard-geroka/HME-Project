@@ -15,6 +15,7 @@ const Auth = () => {
         username,
         password,
       });
+      navigate('/');
     } catch (err) {
       console.error(err);
     }
