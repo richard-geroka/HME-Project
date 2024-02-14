@@ -13,6 +13,7 @@ const Auth = () => {
             id="username"
             placeholder="username"
             value={username}
+            onChange={(e) => setUsername(e.target.value)}
             required
           />
           <label htmlFor="password">password</label>
@@ -21,6 +22,7 @@ const Auth = () => {
             id="password"
             placeholder="password"
             value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
         </form>
