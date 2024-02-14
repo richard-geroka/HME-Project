@@ -25,6 +25,7 @@ const Auth = () => {
     <>
       <div className="auth-container">
         <form onSubmit={onSubmit}>
+          <h2>Login</h2>
           <label htmlFor="username">username</label>
           <input
             type="text"
