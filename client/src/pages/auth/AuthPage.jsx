@@ -8,12 +8,19 @@ const Auth = () => {
       <div className="auth-container">
         <form>
           <label htmlFor="username">username</label>
-          <input type="text" id="username" placeholder="username" required />
+          <input
+            type="text"
+            id="username"
+            placeholder="username"
+            value={username}
+            required
+          />
           <label htmlFor="password">password</label>
           <input
             type="password"
             id="password"
             placeholder="password"
+            value={password}
             required
           />
         </form>
