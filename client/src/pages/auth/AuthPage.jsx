@@ -43,6 +43,9 @@ const Auth = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <button className="hero-btn" type="submit">
+            Login
+          </button>
         </form>
       </div>
     </>
