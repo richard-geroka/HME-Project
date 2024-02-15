@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -23,6 +24,11 @@ const ProjectModal = () => {
     setProjectInfo({ ...projectInfo, [name]: value });
   };
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    // TODO: Finish onSubmit functionality
+  };
+
   return (
     <>
       <Button variant="danger" onClick={handleShow}>
@@ -39,7 +45,7 @@ const ProjectModal = () => {
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form onSubmit={onSubmit}>
             <FloatingLabel
               controlId="floatingInput"
               label="Project Name"
