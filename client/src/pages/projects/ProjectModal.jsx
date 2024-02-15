@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import useGetTokens from '../../hooks/useGetTokens';
+import { useCookies } from 'react-cookie';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 
 const ProjectModal = () => {
   const [show, setShow] = useState(false);
-  const { headers } = useGetTokens;
+  const [cookies, _] = useCookies(['jwt-access']);
   const [projectInfo, setProjectInfo] = useState({
     projectName: '',
     location: '',
@@ -30,7 +30,7 @@ const ProjectModal = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:3000/api/project', projectInfo, {
-        headers,
+        headers: { Authorization: 'Bearer ' + cookies['jwt-access'] },
       });
     } catch (err) {
       console.error(err);
