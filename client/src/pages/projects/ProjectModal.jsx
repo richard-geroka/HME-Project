@@ -39,85 +39,87 @@ const ProjectModal = () => {
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Project Name"
-            className="mb-3"
-          >
-            <Form.Control
-              type="text"
-              placeholder="project name"
-              name="projectName"
-              value={projectInfo.projectName}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Location"
-            className="mb-3"
-          >
-            <Form.Control
-              type="text"
-              placeholder="Location"
-              name="location"
-              value={projectInfo.location}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Description"
-            className="mb-3"
-          >
-            <Form.Control
-              type="text"
-              placeholder="description"
-              name="description"
-              value={projectInfo.description}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Date Started"
-            className="mb-3"
-          >
-            <Form.Control
-              type="date"
-              placeholder="date started"
-              name="dateStarted"
-              value={projectInfo.dateStarted}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Date Completed"
-            className="mb-3"
-          >
-            <Form.Control
-              type="date"
-              placeholder="date completed"
-              name="dateCompleted"
-              value={projectInfo.dateCompleted}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
-          <FloatingLabel
-            controlId="floatingInput"
-            label="Photos"
-            className="mb-3"
-          >
-            <Form.Control
-              type="file"
-              placeholder="photos"
-              multiple
-              name="photos"
-              value={projectInfo.photos}
-              onChange={handleChange}
-            />
-          </FloatingLabel>
+          <Form>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Project Name"
+              className="mb-3"
+            >
+              <Form.Control
+                type="text"
+                placeholder="project name"
+                name="projectName"
+                value={projectInfo.projectName}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Location"
+              className="mb-3"
+            >
+              <Form.Control
+                type="text"
+                placeholder="Location"
+                name="location"
+                value={projectInfo.location}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Description"
+              className="mb-3"
+            >
+              <Form.Control
+                type="text"
+                placeholder="description"
+                name="description"
+                value={projectInfo.description}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Date Started"
+              className="mb-3"
+            >
+              <Form.Control
+                type="date"
+                placeholder="date started"
+                name="dateStarted"
+                value={projectInfo.dateStarted}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Date Completed"
+              className="mb-3"
+            >
+              <Form.Control
+                type="date"
+                placeholder="date completed"
+                name="dateCompleted"
+                value={projectInfo.dateCompleted}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+            <FloatingLabel
+              controlId="floatingInput"
+              label="Photos"
+              className="mb-3"
+            >
+              <Form.Control
+                type="file"
+                placeholder="photos"
+                multiple
+                name="photos"
+                value={projectInfo.photos}
+                onChange={handleChange}
+              />
+            </FloatingLabel>
+          </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={handleClose}>
