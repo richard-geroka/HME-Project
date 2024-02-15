@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
 
 const ProjectModal = () => {
   const [show, setShow] = useState(false);
@@ -23,7 +25,9 @@ const ProjectModal = () => {
         <Modal.Header closeButton>
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Add form here</Modal.Body>
+        <Modal.Body>
+          <div></div>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={handleClose}>
             Close
