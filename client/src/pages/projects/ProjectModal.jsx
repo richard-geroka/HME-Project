@@ -18,6 +18,11 @@ const ProjectModal = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const handleChange = (e) => {
+    const [name, value] = e.target;
+    setProjectInfo({ ...projectInfo, [name]: value });
+  };
+
   return (
     <>
       <Button variant="danger" onClick={handleShow}>
