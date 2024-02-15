@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
 import express from 'express';
 import cors from 'cors';
@@ -7,6 +8,7 @@ import helmet from 'helmet';
 import mongoSanitize from 'express-mongo-sanitize';
 import { xss } from 'express-xss-sanitizer';
 import hpp from 'hpp';
+import cookieParser from 'cookie-parser';
 
 import globalErrorHandler from '../controllers/errorController.js';
 import userRouter from '../routes/userRoutes.js';
@@ -34,8 +36,9 @@ const limiter = rateLimit({
 });
 app.use('/api', limiter);
 
-// Body Parser
+// Body Parser & Cookie Parser
 app.use(express.json({ limit: '10kb' }));
+app.use(cookieParser());
 
 // Data sanitization against NOSQL query injection
 app.use(mongoSanitize());
