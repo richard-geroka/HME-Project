@@ -26,7 +26,48 @@ const ProjectModal = () => {
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div></div>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Project Name"
+            className="mb-3"
+          >
+            <Form.Control type="text" placeholder="project name" />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Location"
+            className="mb-3"
+          >
+            <Form.Control type="text" placeholder="Location" />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Description"
+            className="mb-3"
+          >
+            <Form.Control type="text" placeholder="description" />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Date Started"
+            className="mb-3"
+          >
+            <Form.Control type="date" placeholder="date started" />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Date Completed"
+            className="mb-3"
+          >
+            <Form.Control type="date" placeholder="date completed" />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Photos"
+            className="mb-3"
+          >
+            <Form.Control type="file" placeholder="photos" multiple />
+          </FloatingLabel>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={handleClose}>
