@@ -11,10 +11,14 @@ const Auth = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/user/login', {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        'http://localhost:3000/api/user/login',
+        {
+          username,
+          password,
+        },
+      );
+      console.log(response);
       navigate('/');
     } catch (err) {
       console.error(err);
