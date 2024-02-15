@@ -133,13 +133,15 @@ const ProjectModal = () => {
                 onChange={handleChange}
               />
             </FloatingLabel>
+            <Button variant="danger" type="submit">
+              Submit
+            </Button>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="success" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="danger">Understood</Button>
         </Modal.Footer>
       </Modal>
     </>
