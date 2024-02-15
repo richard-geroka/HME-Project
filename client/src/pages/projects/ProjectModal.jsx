@@ -6,6 +6,14 @@ import Form from 'react-bootstrap/Form';
 
 const ProjectModal = () => {
   const [show, setShow] = useState(false);
+  const [projectInfo, setProjectInfo] = useState({
+    projectName: '',
+    location: '',
+    description: '',
+    dateStarted: 1 / 1 / 2024,
+    dateCompleted: 1 / 1 / 2024,
+    photos: '',
+  });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
