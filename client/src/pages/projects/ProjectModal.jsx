@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios';
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
@@ -53,7 +54,7 @@ const ProjectModal = () => {
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form onSubmit={onSubmit}>
+          <Form onSubmit={onSubmit} encType="multipart/form-data">
             <FloatingLabel
               controlId="floatingInput"
               label="Project Name"
