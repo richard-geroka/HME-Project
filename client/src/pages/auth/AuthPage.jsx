@@ -21,7 +21,7 @@ const Auth = () => {
           password,
         },
       );
-      setCookies('jwt-access', response.data.token);
+      setCookies('jwt-access', response.data.token, { path: '/' });
       navigate('/');
     } catch (err) {
       console.error(err);
