@@ -14,11 +14,11 @@ const projectSchema = new mongoose.Schema({
     required: [true, 'Please provide a short description about the project'],
   },
   dateStarted: {
-    type: Date,
+    type: String,
     required: [true, 'Please provide date started'],
   },
   dateCompleted: {
-    type: Date,
+    type: String,
     required: [true, 'Please provide date completed'],
   },
   photos: [String],
