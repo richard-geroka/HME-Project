@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
+import useGetTokens from '../../hooks/useGetTokens';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -7,6 +8,7 @@ import Form from 'react-bootstrap/Form';
 
 const ProjectModal = () => {
   const [show, setShow] = useState(false);
+  const { headers } = useGetTokens;
   const [projectInfo, setProjectInfo] = useState({
     projectName: '',
     location: '',
@@ -26,7 +28,13 @@ const ProjectModal = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Finish onSubmit functionality
+    try {
+      await axios.post('http://localhost:3000/api/project', projectInfo, {
+        headers,
+      });
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
