@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useCookies } from 'react-cookie';
 import axios from 'axios';
 
 const Auth = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [_, setCookies] = useCookies(['jwt-access']);
 
   const navigate = useNavigate();
 
@@ -18,7 +21,7 @@ const Auth = () => {
           password,
         },
       );
-      console.log(response);
+      setCookies('jwt-access', response.data.token);
       navigate('/');
     } catch (err) {
       console.error(err);
