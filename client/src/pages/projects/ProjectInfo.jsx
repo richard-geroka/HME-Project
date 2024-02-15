@@ -1,10 +1,12 @@
 import axios from 'axios';
+import ProjectModal from './ProjectModal';
 
 const ProjectInfo = () => {
   return (
     <>
       <section className="project-info">
         <div className="wrapper">
+          <ProjectModal />
           <div className="project-info-container">
             <div className="project-info-col">
               <img src="" alt="" />
