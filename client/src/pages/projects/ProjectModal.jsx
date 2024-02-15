@@ -43,6 +43,7 @@ const ProjectModal = () => {
               type="text"
               placeholder="project name"
               name="projectName"
+              value={projectInfo.projectName}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -50,7 +51,12 @@ const ProjectModal = () => {
             label="Location"
             className="mb-3"
           >
-            <Form.Control type="text" placeholder="Location" name="location" />
+            <Form.Control
+              type="text"
+              placeholder="Location"
+              name="location"
+              value={projectInfo.location}
+            />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
@@ -61,6 +67,7 @@ const ProjectModal = () => {
               type="text"
               placeholder="description"
               name="description"
+              value={projectInfo.description}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -72,6 +79,7 @@ const ProjectModal = () => {
               type="date"
               placeholder="date started"
               name="dateStarted"
+              value={projectInfo.dateStarted}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -83,6 +91,7 @@ const ProjectModal = () => {
               type="date"
               placeholder="date completed"
               name="dateCompleted"
+              value={projectInfo.dateCompleted}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -95,6 +104,7 @@ const ProjectModal = () => {
               placeholder="photos"
               multiple
               name="photos"
+              value={projectInfo.photos}
             />
           </FloatingLabel>
         </Modal.Body>
