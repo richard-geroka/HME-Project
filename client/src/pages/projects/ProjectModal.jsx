@@ -19,7 +19,7 @@ const ProjectModal = () => {
   const handleShow = () => setShow(true);
 
   const handleChange = (e) => {
-    const [name, value] = e.target;
+    const { name, value } = e.target;
     setProjectInfo({ ...projectInfo, [name]: value });
   };
 
@@ -49,6 +49,7 @@ const ProjectModal = () => {
               placeholder="project name"
               name="projectName"
               value={projectInfo.projectName}
+              onChange={handleChange}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -61,6 +62,7 @@ const ProjectModal = () => {
               placeholder="Location"
               name="location"
               value={projectInfo.location}
+              onChange={handleChange}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -73,6 +75,7 @@ const ProjectModal = () => {
               placeholder="description"
               name="description"
               value={projectInfo.description}
+              onChange={handleChange}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -85,6 +88,7 @@ const ProjectModal = () => {
               placeholder="date started"
               name="dateStarted"
               value={projectInfo.dateStarted}
+              onChange={handleChange}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -97,6 +101,7 @@ const ProjectModal = () => {
               placeholder="date completed"
               name="dateCompleted"
               value={projectInfo.dateCompleted}
+              onChange={handleChange}
             />
           </FloatingLabel>
           <FloatingLabel
@@ -110,6 +115,7 @@ const ProjectModal = () => {
               multiple
               name="photos"
               value={projectInfo.photos}
+              onChange={handleChange}
             />
           </FloatingLabel>
         </Modal.Body>
