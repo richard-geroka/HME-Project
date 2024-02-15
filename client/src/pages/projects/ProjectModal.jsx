@@ -3,9 +3,34 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const ProjectModal = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-      <div>Hello, World!</div>
+      <Button variant="danger" onClick={handleShow}>
+        <i className="bi bi-plus-circle"> Project</i>
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Add Projects</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Add form here</Modal.Body>
+        <Modal.Footer>
+          <Button variant="success" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="danger">Understood</Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };
