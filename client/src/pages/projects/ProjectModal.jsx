@@ -39,42 +39,63 @@ const ProjectModal = () => {
             label="Project Name"
             className="mb-3"
           >
-            <Form.Control type="text" placeholder="project name" />
+            <Form.Control
+              type="text"
+              placeholder="project name"
+              name="projectName"
+            />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
             label="Location"
             className="mb-3"
           >
-            <Form.Control type="text" placeholder="Location" />
+            <Form.Control type="text" placeholder="Location" name="location" />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
             label="Description"
             className="mb-3"
           >
-            <Form.Control type="text" placeholder="description" />
+            <Form.Control
+              type="text"
+              placeholder="description"
+              name="description"
+            />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
             label="Date Started"
             className="mb-3"
           >
-            <Form.Control type="date" placeholder="date started" />
+            <Form.Control
+              type="date"
+              placeholder="date started"
+              name="dateStarted"
+            />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
             label="Date Completed"
             className="mb-3"
           >
-            <Form.Control type="date" placeholder="date completed" />
+            <Form.Control
+              type="date"
+              placeholder="date completed"
+              name="dateCompleted"
+            />
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingInput"
             label="Photos"
             className="mb-3"
           >
-            <Form.Control type="file" placeholder="photos" multiple />
+            <Form.Control
+              type="file"
+              placeholder="photos"
+              multiple
+              name="photos"
+            />
           </FloatingLabel>
         </Modal.Body>
         <Modal.Footer>
