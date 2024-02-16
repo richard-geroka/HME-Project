@@ -37,10 +37,15 @@ const ProjectModal = () => {
     formData.append('description', projectInfo.description);
     formData.append('duration', projectInfo.duration);
 
+    const config = {
+      headers: {
+        Authorization: 'Bearer ' + cookies['jwt-access'],
+        'Content-Type': 'multipart/form-data',
+      },
+    };
+
     try {
-      await axios.post('http://localhost:3000/api/project', projectInfo, {
-        headers: { Authorization: 'Bearer ' + cookies['jwt-access'] },
-      });
+      await axios.post('http://localhost:3000/api/project', formData, config);
       console.log(cookies);
     } catch (err) {
       console.error(err);
