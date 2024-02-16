@@ -14,8 +14,7 @@ const ProjectModal = () => {
     projectName: '',
     location: '',
     description: '',
-    dateStarted: 1 / 1 / 2024,
-    dateCompleted: 1 / 1 / 2024,
+    duration: '',
     photos: '',
   });
 
@@ -97,27 +96,14 @@ const ProjectModal = () => {
             </FloatingLabel>
             <FloatingLabel
               controlId="floatingInput"
-              label="Date Started"
+              label="Build Duration"
               className="mb-3"
             >
               <Form.Control
-                type="date"
-                placeholder="date started"
-                name="dateStarted"
-                value={projectInfo.dateStarted}
-                onChange={handleChange}
-              />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Date Completed"
-              className="mb-3"
-            >
-              <Form.Control
-                type="date"
-                placeholder="date completed"
-                name="dateCompleted"
-                value={projectInfo.dateCompleted}
+                type="text"
+                placeholder="build duration"
+                name="duration"
+                value={projectInfo.duration}
                 onChange={handleChange}
               />
             </FloatingLabel>
