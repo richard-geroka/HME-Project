@@ -54,7 +54,7 @@ const ProjectModal = () => {
           <Modal.Title>Add Projects</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form onSubmit={onSubmit} encType="multipart/form-data">
+          <Form onSubmit={onSubmit}>
             <FloatingLabel
               controlId="floatingInput"
               label="Project Name"
