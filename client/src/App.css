@@ -520,6 +520,42 @@
   text-shadow: 2px 2px 1px var(--black);
 }
 
+/* Project info section style */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.project-info-container {
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  padding: 3em;
+}
+
+.project-info-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-info-text {
+  color: var(--green);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
 /* AUTH PAGE STYLE */
 .auth-container {
   position: relative;
