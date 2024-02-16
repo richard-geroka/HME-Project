@@ -139,16 +139,18 @@ const ProjectModal = () => {
                 onChange={(e) => setPhotos(e.target.files)}
               />
             </FloatingLabel>
-            <Button variant="danger" type="submit">
+            <Button variant="danger" type="submit" className="me-3">
               Submit
+            </Button>
+            <Button
+              variant="outline-success"
+              onClick={handleClose}
+              type="button"
+            >
+              Close
             </Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="success" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );
