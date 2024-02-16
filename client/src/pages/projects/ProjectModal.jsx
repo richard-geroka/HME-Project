@@ -117,7 +117,6 @@ const ProjectModal = () => {
                 placeholder="photos"
                 multiple
                 name="photos"
-                value={projectInfo.photos}
                 onChange={handleChange}
               />
             </FloatingLabel>
