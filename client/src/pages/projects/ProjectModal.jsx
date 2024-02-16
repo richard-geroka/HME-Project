@@ -117,7 +117,7 @@ const ProjectModal = () => {
                 placeholder="photos"
                 multiple
                 name="photos"
-                onChange={handleChange}
+                onChange={(e) => setPhotos(e.target.files)}
               />
             </FloatingLabel>
             <Button variant="danger" type="submit">
