@@ -47,6 +47,7 @@ const ProjectModal = () => {
     try {
       await axios.post('http://localhost:3000/api/project', formData, config);
       console.log(cookies);
+      console.log(formData);
     } catch (err) {
       console.error(err);
     }
