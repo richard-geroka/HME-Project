@@ -33,6 +33,7 @@ const ProjectModal = () => {
       await axios.post('http://localhost:3000/api/project', projectInfo, {
         headers: { Authorization: 'Bearer ' + cookies['jwt-access'] },
       });
+      console.log(cookies);
     } catch (err) {
       console.error(err);
     }
