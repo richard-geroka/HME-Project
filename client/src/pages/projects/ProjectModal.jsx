@@ -28,6 +28,15 @@ const ProjectModal = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    const formData = new FormData();
+    [...photos].forEach((photo) => {
+      formData.append('photos', photo);
+    });
+    formData.append('projectName', projectInfo.projectName);
+    formData.append('location', projectInfo.location);
+    formData.append('description', projectInfo.description);
+    formData.append('duration', projectInfo.duration);
+
     try {
       await axios.post('http://localhost:3000/api/project', projectInfo, {
         headers: { Authorization: 'Bearer ' + cookies['jwt-access'] },
