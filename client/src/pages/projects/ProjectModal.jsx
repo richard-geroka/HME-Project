@@ -15,8 +15,8 @@ const ProjectModal = () => {
     location: '',
     description: '',
     duration: '',
-    photos: '',
   });
+  const [photos, setPhotos] = useState();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
