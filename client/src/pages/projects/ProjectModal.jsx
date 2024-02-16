@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -17,6 +18,8 @@ const ProjectModal = () => {
     duration: '',
   });
   const [photos, setPhotos] = useState();
+
+  const navigate = useNavigate();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -48,6 +51,7 @@ const ProjectModal = () => {
       await axios.post('http://localhost:3000/api/project', formData, config);
       console.log(cookies);
       console.log(formData);
+      navigate('/project');
     } catch (err) {
       console.error(err);
     }
