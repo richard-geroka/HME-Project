@@ -1,6 +1,6 @@
 import axios from 'axios';
 import ProjectModal from './ProjectModal';
-import fitoutCard from '../../assets/images/fitout-card7.png';
+import fitoutCard from '../../assets/images/photoism1.png';
 
 const ProjectInfo = () => {
   return (

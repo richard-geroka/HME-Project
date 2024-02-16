@@ -549,6 +549,10 @@
   gap: 1rem;
 }
 
+.project-info-col img {
+  max-height: 250px;
+}
+
 .project-info-text {
   color: var(--green);
   max-width: 400px;
