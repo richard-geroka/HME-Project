@@ -43,7 +43,9 @@ const ProjectInfo = () => {
                     <p className="project-info-data">
                       Duration: {project.duration}
                     </p>
-                    <p className="project-info-data">{project.description}</p>
+                    <p className="project-info-data">
+                      Description: {project.description}
+                    </p>
                     <button className="hero-btn">View Photos</button>
                   </div>
                 </div>
