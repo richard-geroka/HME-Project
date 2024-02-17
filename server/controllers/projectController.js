@@ -35,7 +35,7 @@ export const resizeImages = catchAsync(async (req, res, next) => {
         .resize(400, 350, { fit: 'fill' })
         .toFormat('jpeg')
         .jpeg({ quality: 90 })
-        .toFile(`./public/images/${fileName}`);
+        .toFile(`../../client/src/assets/images/${fileName}`);
 
       req.body.photos.push(fileName);
     }),
