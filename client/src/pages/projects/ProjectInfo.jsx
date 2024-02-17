@@ -10,7 +10,7 @@ const ProjectInfo = () => {
     const fetchedData = async () => {
       try {
         const response = await axios.get('http://localhost:3000/api/project');
-        setProjects(response.data);
+        setProjects(response.data.projects);
       } catch (err) {
         console.error(err);
       }
@@ -26,7 +26,7 @@ const ProjectInfo = () => {
           <div className="modal-container">
             <ProjectModal />
           </div>
-          {projects?.map((project) => {
+          {projects.map((project) => {
             return (
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
