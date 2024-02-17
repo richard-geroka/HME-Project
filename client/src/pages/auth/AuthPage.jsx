@@ -7,7 +7,7 @@ const Auth = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   // eslint-disable-next-line no-unused-vars
-  const [_, setCookies] = useCookies(['jwt-access']);
+  const [_, setCookie] = useCookies(['jwt-access', 'user']);
 
   const navigate = useNavigate();
 
@@ -21,7 +21,8 @@ const Auth = () => {
           password,
         },
       );
-      setCookies('jwt-access', response.data.token, { path: '/' });
+      setCookie('jwt-access', response.data.token, { path: '/' });
+      setCookie('user', response.data.user, { path: '/' });
       navigate('/');
     } catch (err) {
       console.error(err);
