@@ -49,8 +49,7 @@ export const addProject = catchAsync(async (req, res, next) => {
     projectName: req.body.projectName,
     location: req.body.location,
     description: req.body.description,
-    dateStarted: req.body.dateStarted,
-    dateCompleted: req.body.dateCompleted,
+    duration: req.body.duration,
     photos: req.body.photos,
   });
 
