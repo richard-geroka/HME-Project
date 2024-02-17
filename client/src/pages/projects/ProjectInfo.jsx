@@ -1,10 +1,23 @@
 import axios from 'axios';
 import ProjectModal from './ProjectModal';
 import fitoutCard from '../../assets/images/photoism1.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchedData = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/api/project');
+        setProjects(response);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    fetchedData();
+  }, []);
 
   return (
     <>
