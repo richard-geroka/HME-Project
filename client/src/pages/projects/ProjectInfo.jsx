@@ -1,8 +1,11 @@
 import axios from 'axios';
 import ProjectModal from './ProjectModal';
 import fitoutCard from '../../assets/images/photoism1.png';
+import { useState } from 'react';
 
 const ProjectInfo = () => {
+  const [projects, setProjects] = useState([]);
+
   return (
     <>
       <section className="project-info">
