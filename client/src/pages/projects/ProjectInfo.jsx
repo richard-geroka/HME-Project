@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 import axios from 'axios';
-import ProjectModal from './ProjectModal';
 import { useEffect, useState } from 'react';
+import { useCookies } from 'react-cookie';
+import ProjectModal from './ProjectModal';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
+  const [cookies, _] = useCookies(['user']);
 
   useEffect(() => {
     const fetchedData = async () => {
@@ -27,7 +30,7 @@ const ProjectInfo = () => {
       <section className="project-info">
         <div className="wrapper">
           <div className="modal-container">
-            <ProjectModal />
+            {cookies.user ? <ProjectModal /> : undefined}
           </div>
           {projects.map((project) => {
             return (
