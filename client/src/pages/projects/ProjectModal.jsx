@@ -51,7 +51,7 @@ const ProjectModal = () => {
       await axios.post('http://localhost:3000/api/project', formData, config);
       console.log(cookies);
       console.log(formData);
-      navigate('/project');
+      navigate('/projects');
     } catch (err) {
       console.error(err);
     }
