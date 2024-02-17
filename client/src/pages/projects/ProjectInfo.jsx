@@ -1,6 +1,5 @@
 import axios from 'axios';
 import ProjectModal from './ProjectModal';
-import fitoutCard from '../../assets/images/photoism1.png';
 import { useEffect, useState } from 'react';
 
 const ProjectInfo = () => {
@@ -19,6 +18,10 @@ const ProjectInfo = () => {
     fetchedData();
   }, []);
 
+  function getImageUrl(name) {
+    return new URL(`../../assets/images/${name}`, import.meta.url).href;
+  }
+
   return (
     <>
       <section className="project-info">
@@ -31,7 +34,7 @@ const ProjectInfo = () => {
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
                   <div>
-                    <img src={fitoutCard} alt="" />
+                    <img src={getImageUrl(project.photos[0])} alt="" />
                   </div>
                   <div className="project-info-text">
                     <p className="project-info-data">
