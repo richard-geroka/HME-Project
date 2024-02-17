@@ -28,20 +28,22 @@ const ProjectInfo = () => {
           </div>
           {projects.map((project) => {
             return (
-              <div className="project-info-container">
+              <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
                   <div>
                     <img src={fitoutCard} alt="" />
                   </div>
                   <div className="project-info-text">
-                    <p className="project-info-data">Project: Photoism</p>
-                    <p className="project-info-data">Location: SM Lanang</p>
-                    <p className="project-info-data">Duration: 3 Months</p>
                     <p className="project-info-data">
-                      Description: Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Excepturi laboriosam beatae debitis
-                      asperiores perferendis.
+                      Project: {project.projectName}
                     </p>
+                    <p className="project-info-data">
+                      Location: {project.location}
+                    </p>
+                    <p className="project-info-data">
+                      Duration: {project.duration}
+                    </p>
+                    <p className="project-info-data">{project.description}</p>
                     <button className="hero-btn">View Photos</button>
                   </div>
                 </div>
