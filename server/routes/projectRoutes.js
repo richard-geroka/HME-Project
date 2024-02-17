@@ -12,14 +12,14 @@ import { protectRoute } from '../controllers/authController.js';
 
 const router = express.Router();
 
-// Protect routes below
-router.use(protectRoute);
-
 router
   .route('/')
-  .post(uploadProjectImages, resizeImages, addProject)
+  .post(protectRoute, uploadProjectImages, resizeImages, addProject)
   .get(getProjects);
 
-router.route('/:id').patch(updateProject).delete(deleteProject);
+router
+  .route('/:id')
+  .patch(protectRoute, updateProject)
+  .delete(protectRoute, deleteProject);
 
 export default router;
