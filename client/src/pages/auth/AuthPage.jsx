@@ -24,12 +24,10 @@ const Auth = () => {
       setCookie('jwt-access', response.data.token, {
         path: '/',
         secure: true,
-        httpOnly: true,
       });
       setCookie('user', response.data.user, {
         path: '/',
         secure: true,
-        httpOnly: true,
       });
       navigate('/');
     } catch (err) {
