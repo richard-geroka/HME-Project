@@ -14,6 +14,7 @@ const projectSchema = new mongoose.Schema({
     required: [true, 'Please provide a short description about the project'],
   },
   duration: { type: String, required: [true, 'Please provide duration'] },
+  projectImageCover: String,
   photos: [String],
 });
 
