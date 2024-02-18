@@ -36,6 +36,7 @@ const ProjectInfo = () => {
     try {
       await axios.delete('http://localhost:3000/api/project/' + id, config);
       alert('Project has been deleted successfully');
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
