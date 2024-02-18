@@ -7,7 +7,7 @@ import ProjectModal from './ProjectModal';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
-  const [cookies, _] = useCookies(['user']);
+  const [cookies, _] = useCookies(['jwt-access', 'user']);
 
   useEffect(() => {
     const fetchedData = async () => {
