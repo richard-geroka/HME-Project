@@ -22,7 +22,10 @@ const ProjectModal = () => {
 
   const navigate = useNavigate();
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+    window.location.reload();
+  };
   const handleShow = () => setShow(true);
 
   const handleChange = (e) => {
@@ -53,7 +56,6 @@ const ProjectModal = () => {
       setIsSubmitted(true);
       console.log(cookies);
       console.log(formData);
-      navigate('/projects');
     } catch (err) {
       console.error(err);
     }
