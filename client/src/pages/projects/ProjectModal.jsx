@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import axios from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -19,8 +18,6 @@ const ProjectModal = () => {
     duration: '',
   });
   const [photos, setPhotos] = useState();
-
-  const navigate = useNavigate();
 
   const handleClose = () => {
     setShow(false);
