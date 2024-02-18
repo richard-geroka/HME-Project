@@ -37,7 +37,13 @@ const ProjectInfo = () => {
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
                   <div>
-                    <img src={getImageUrl(project.photos[0])} alt="" />
+                    {project.photos.map((photo, index) => {
+                      return (
+                        <div key={index}>
+                          <img src={getImageUrl(photo)} alt="" />
+                        </div>
+                      );
+                    })}
                   </div>
                   <div className="project-info-text">
                     <p className="project-info-data">
