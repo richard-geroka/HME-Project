@@ -10,6 +10,7 @@ import Form from 'react-bootstrap/Form';
 
 const ProjectModal = () => {
   const [show, setShow] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [cookies, _] = useCookies(['jwt-access']);
   const [projectInfo, setProjectInfo] = useState({
     projectName: '',
