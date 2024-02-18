@@ -544,13 +544,20 @@
 
 .project-info-col {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .project-info-col img {
   max-height: 250px;
+}
+
+.project-info-image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .project-info-text {

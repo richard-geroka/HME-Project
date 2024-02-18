@@ -36,15 +36,6 @@ const ProjectInfo = () => {
             return (
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
-                  <div>
-                    {project.photos.map((photo, index) => {
-                      return (
-                        <div key={index}>
-                          <img src={getImageUrl(photo)} alt="" />
-                        </div>
-                      );
-                    })}
-                  </div>
                   <div className="project-info-text">
                     <p className="project-info-data">
                       Project: {project.projectName}
@@ -58,6 +49,15 @@ const ProjectInfo = () => {
                     <p className="project-info-data">
                       Description: {project.description}
                     </p>
+                  </div>
+                  <div className="project-info-image-container">
+                    {project.photos.map((photo, index) => {
+                      return (
+                        <div key={index}>
+                          <img src={getImageUrl(photo)} alt="" />
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
