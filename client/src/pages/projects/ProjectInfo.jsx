@@ -50,7 +50,10 @@ const ProjectInfo = () => {
                     <Link to={'/'}>
                       <i className="bi bi-pencil-square"></i> edit
                     </Link>
-                    <button className="hero-btn">
+                    <button
+                      className="hero-btn"
+                      onClick={() => handleDelete(project._id)}
+                    >
                       <i className="bi bi-trash"></i> delete
                     </button>
                   </div>
