@@ -39,6 +39,9 @@ const CollapsibleNavbar = () => {
               <Nav.Link href="/contact" className="text-danger fs-5 fw-bolder">
                 Contact Us
               </Nav.Link>
+              <Nav.Link href="/" className="fw-normal fs-5 text-success">
+                Logout
+              </Nav.Link>
             </Nav>
           </Container>
         </Navbar.Collapse>
