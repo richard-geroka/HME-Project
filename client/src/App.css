@@ -539,7 +539,7 @@
 
 .project-info-container {
   border: 2px solid var(--green);
-  padding: 3em;
+  padding: 2em;
   margin-bottom: 1em;
 }
 
@@ -565,6 +565,14 @@
   color: var(--green);
   max-width: 400px;
   line-height: 1.6;
+}
+
+.project-info-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
 }
 
 /* AUTH PAGE STYLE */

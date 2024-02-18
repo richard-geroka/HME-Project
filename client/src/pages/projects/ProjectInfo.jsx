@@ -47,8 +47,8 @@ const ProjectInfo = () => {
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
                   {cookies.user ? (
-                    <div>
-                      <Link to={'/'}>
+                    <div className="project-info-btn-container">
+                      <Link to={'/'} className="hero-btn">
                         <i className="bi bi-pencil-square"></i> edit
                       </Link>
                       <button
