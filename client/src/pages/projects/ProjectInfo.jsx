@@ -26,9 +26,15 @@ const ProjectInfo = () => {
     return new URL(`../../assets/images/${name}`, import.meta.url).href;
   }
 
+  const config = {
+    headers: {
+      Authorization: 'Bearer ' + cookies['jwt-access'],
+    },
+  };
+
   const handleDelete = async (id) => {
     try {
-      await axios.delete('http://localhost:3000/api/project/' + id);
+      await axios.delete('http://localhost:3000/api/project/' + id, config);
       alert('Project has been deleted successfully');
     } catch (err) {
       console.error(err);
