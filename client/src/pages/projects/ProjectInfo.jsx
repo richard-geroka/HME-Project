@@ -38,8 +38,12 @@ const ProjectInfo = () => {
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
                   <div>
-                    <Link to={'/'}></Link>
-                    <button className="hero-btn">delete</button>
+                    <Link to={'/'}>
+                      <i className="bi bi-pencil-square"></i> edit
+                    </Link>
+                    <button className="hero-btn">
+                      <i className="bi bi-trash"></i> delete
+                    </button>
                   </div>
                   <div className="project-info-text">
                     <p className="project-info-data">
