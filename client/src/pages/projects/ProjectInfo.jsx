@@ -58,7 +58,6 @@ const ProjectInfo = () => {
                     <p className="project-info-data">
                       Description: {project.description}
                     </p>
-                    <button className="hero-btn">View Photos</button>
                   </div>
                 </div>
               </div>
