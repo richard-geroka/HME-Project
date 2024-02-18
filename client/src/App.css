@@ -540,6 +540,7 @@
 .project-info-container {
   border: 2px solid var(--green);
   padding: 3em;
+  margin-bottom: 1em;
 }
 
 .project-info-col {
