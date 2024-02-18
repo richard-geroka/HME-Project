@@ -50,6 +50,7 @@ const ProjectModal = () => {
 
     try {
       await axios.post('http://localhost:3000/api/project', formData, config);
+      setIsSubmitted(true);
       console.log(cookies);
       console.log(formData);
       navigate('/projects');
@@ -140,6 +141,9 @@ const ProjectModal = () => {
                 onChange={(e) => setPhotos(e.target.files)}
               />
             </FloatingLabel>
+            {isSubmitted ? (
+              <p className="text-success">Project has been added</p>
+            ) : undefined}
             <Button variant="danger" type="submit" className="me-3">
               Submit
             </Button>
