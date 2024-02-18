@@ -21,7 +21,7 @@ const upload = multer({
   fileFilter: multerFilter,
 });
 
-export const uploadProjectImages = upload.array('photos', 10);
+export const uploadProjectImages = upload.array('photos', 4);
 
 export const resizeImages = catchAsync(async (req, res, next) => {
   console.log(req.files);
