@@ -8,6 +8,7 @@ import ProjectPage from './pages/projects/ProjectPage';
 import AboutPage from './pages/about/AboutPage';
 import ContactPage from './pages/contact/ContactPage';
 import Auth from './pages/auth/AuthPage';
+import UpdateProjectInfo from './pages/projects/UpdateProjectInfo';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/services" element={<ServicePage />} />
           <Route path="/projects" element={<ProjectPage />} />
-          <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/projects/:id" element={<UpdateProjectInfo />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/auth" element={<Auth />} />
