@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
+import { Link } from 'react-router-dom';
 import ProjectModal from './ProjectModal';
 
 const ProjectInfo = () => {
@@ -36,6 +37,10 @@ const ProjectInfo = () => {
             return (
               <div key={project._id} className="project-info-container">
                 <div className="project-info-col">
+                  <div>
+                    <Link to={'/'}></Link>
+                    <button className="hero-btn">delete</button>
+                  </div>
                   <div className="project-info-text">
                     <p className="project-info-data">
                       Project: {project.projectName}

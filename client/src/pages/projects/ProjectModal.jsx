@@ -21,6 +21,7 @@ const ProjectModal = () => {
 
   const handleClose = () => {
     setShow(false);
+    setIsSubmitted(false);
     window.location.reload();
   };
   const handleShow = () => setShow(true);
@@ -141,7 +142,9 @@ const ProjectModal = () => {
               />
             </FloatingLabel>
             {isSubmitted ? (
-              <p className="text-success">Project has been added</p>
+              <p className="text-success mb-1">
+                Project has been added successfully!
+              </p>
             ) : undefined}
             <Button variant="danger" type="submit" className="me-3">
               Submit
