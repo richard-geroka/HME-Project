@@ -51,7 +51,7 @@ const UpdateProjectInfo = () => {
             placeholder="project name"
             name="projectName"
             value={projectName}
-            onChange={handleChange}
+            onChange={(e) => setProjectName(e.target.value)}
           />
         </FloatingLabel>
         <FloatingLabel
@@ -64,7 +64,7 @@ const UpdateProjectInfo = () => {
             placeholder="Location"
             name="location"
             value={location}
-            onChange={handleChange}
+            onChange={(e) => setLocation(e.target.value)}
           />
         </FloatingLabel>
         <FloatingLabel
@@ -77,7 +77,7 @@ const UpdateProjectInfo = () => {
             placeholder="description"
             name="description"
             value={description}
-            onChange={handleChange}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </FloatingLabel>
         <FloatingLabel
@@ -90,7 +90,7 @@ const UpdateProjectInfo = () => {
             placeholder="build duration"
             name="duration"
             value={duration}
-            onChange={handleChange}
+            onChange={(e) => setDuration(e.target.value)}
           />
         </FloatingLabel>
       </Form>
