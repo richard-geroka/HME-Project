@@ -575,6 +575,16 @@
   gap: 1rem;
 }
 
+/* Update Project Info style */
+.project-form-container {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--green);
+}
+
 /* AUTH PAGE STYLE */
 .auth-container {
   position: relative;

@@ -64,63 +64,65 @@ const UpdateProjectInfo = () => {
 
   return (
     <>
-      <Form onSubmit={onSubmit}>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Project Name"
-          className="mb-3"
-        >
-          <Form.Control
-            type="text"
-            placeholder="project name"
-            name="projectName"
-            value={projectName}
-            onChange={(e) => setProjectName(e.target.value)}
-          />
-        </FloatingLabel>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Location"
-          className="mb-3"
-        >
-          <Form.Control
-            type="text"
-            placeholder="Location"
-            name="location"
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-          />
-        </FloatingLabel>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Description"
-          className="mb-3"
-        >
-          <Form.Control
-            type="text"
-            placeholder="description"
-            name="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-        </FloatingLabel>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Build Duration"
-          className="mb-3"
-        >
-          <Form.Control
-            type="text"
-            placeholder="build duration"
-            name="duration"
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
-          />
-        </FloatingLabel>
-        <button className="hero-btn" type="submit">
-          Update
-        </button>
-      </Form>
+      <div className="project-form-container">
+        <Form onSubmit={onSubmit}>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Project Name"
+            className="mb-3"
+          >
+            <Form.Control
+              type="text"
+              placeholder="project name"
+              name="projectName"
+              value={projectName}
+              onChange={(e) => setProjectName(e.target.value)}
+            />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Location"
+            className="mb-3"
+          >
+            <Form.Control
+              type="text"
+              placeholder="Location"
+              name="location"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+            />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Description"
+            className="mb-3"
+          >
+            <Form.Control
+              type="text"
+              placeholder="description"
+              name="description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </FloatingLabel>
+          <FloatingLabel
+            controlId="floatingInput"
+            label="Build Duration"
+            className="mb-3"
+          >
+            <Form.Control
+              type="text"
+              placeholder="build duration"
+              name="duration"
+              value={duration}
+              onChange={(e) => setDuration(e.target.value)}
+            />
+          </FloatingLabel>
+          <button className="hero-btn" type="submit">
+            Update
+          </button>
+        </Form>
+      </div>
     </>
   );
 };
