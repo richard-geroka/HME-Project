@@ -33,6 +33,24 @@ const UpdateProjectInfo = () => {
     fetchProject();
   }, [id, headers]);
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.patch(
+        'http://localhost:3000/api/project/' + id,
+        {
+          projectName,
+          location,
+          description,
+          duration,
+        },
+        headers,
+      );
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <>
       <Form>
