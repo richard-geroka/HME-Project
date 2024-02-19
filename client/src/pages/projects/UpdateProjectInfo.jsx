@@ -123,9 +123,14 @@ const UpdateProjectInfo = () => {
               onChange={(e) => setDuration(e.target.value)}
             />
           </FloatingLabel>
-          <button className="hero-btn" type="submit">
-            Update
-          </button>
+          <div>
+            <button className="hero-btn" type="submit">
+              Update
+            </button>
+            <button className="hero-btn" type="button">
+              Cancel
+            </button>
+          </div>
         </Form>
       </div>
     </>
