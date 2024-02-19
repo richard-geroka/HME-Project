@@ -3,6 +3,7 @@ import express from 'express';
 import {
   addProject,
   deleteProject,
+  getProject,
   getProjects,
   resizeImages,
   updateProject,
@@ -19,6 +20,7 @@ router
 
 router
   .route('/:id')
+  .get(protectRoute, getProject)
   .patch(protectRoute, updateProject)
   .delete(protectRoute, deleteProject);
 
