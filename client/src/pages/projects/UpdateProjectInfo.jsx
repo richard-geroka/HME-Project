@@ -10,6 +10,21 @@ const UpdateProjectInfo = () => {
   const [location, setLocation] = useState();
   const [description, setDescription] = useState();
   const [duration, setDuration] = useState();
+
+  useEffect(() => {
+    const fetchProject = async () => {
+      try {
+        const response = await axios.get(
+          'http://localhost:3000/api/project/' + id,
+        );
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    fetchProject();
+  }, [id]);
+
   return (
     <>
       <Form>
