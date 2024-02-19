@@ -53,7 +53,7 @@ const UpdateProjectInfo = () => {
 
   return (
     <>
-      <Form>
+      <Form onSubmit={onSubmit}>
         <FloatingLabel
           controlId="floatingInput"
           label="Project Name"
