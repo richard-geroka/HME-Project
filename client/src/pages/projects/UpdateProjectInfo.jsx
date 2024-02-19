@@ -4,6 +4,10 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 
 const UpdateProjectInfo = () => {
+  const [projectName, setProjectName] = useState();
+  const [location, setLocation] = useState();
+  const [description, setDescription] = useState();
+  const [duration, setDuration] = useState();
   return (
     <>
       <Form>
