@@ -14,6 +14,8 @@ const UpdateProjectInfo = () => {
   const [description, setDescription] = useState();
   const [duration, setDuration] = useState();
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchProject = async () => {
       try {
@@ -46,6 +48,8 @@ const UpdateProjectInfo = () => {
         },
         headers,
       );
+      alert('Updated info successfully!');
+      navigate('/projects');
     } catch (err) {
       console.error(err);
     }
