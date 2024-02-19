@@ -62,6 +62,10 @@ const UpdateProjectInfo = () => {
     }
   };
 
+  const onCancel = () => {
+    navigate('/projects');
+  };
+
   return (
     <>
       <div className="project-form-container">
