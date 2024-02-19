@@ -1,30 +1,25 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
+import useGetTokens from '../../hooks/useGetTokens';
 
 const UpdateProjectInfo = () => {
   const { id } = useParams();
-  const [cookies, _] = useCookies(['jwt-access']);
+  const { headers } = useGetTokens();
   const [projectName, setProjectName] = useState();
   const [location, setLocation] = useState();
   const [description, setDescription] = useState();
   const [duration, setDuration] = useState();
 
   useEffect(() => {
-    const config = {
-      headers: {
-        Authorization: 'Bearer ' + cookies['jwt-access'],
-      },
-    };
     const fetchProject = async () => {
       try {
         const response = await axios.get(
           'http://localhost:3000/api/project/' + id,
-          config,
+          headers,
         );
         setProjectName(response.data.project.projectName);
         setLocation(response.data.project.location);
@@ -36,7 +31,7 @@ const UpdateProjectInfo = () => {
     };
 
     fetchProject();
-  }, [id, cookies]);
+  }, [id, headers]);
 
   return (
     <>
