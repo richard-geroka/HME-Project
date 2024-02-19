@@ -127,7 +127,7 @@ const UpdateProjectInfo = () => {
             <button className="hero-btn" type="submit">
               Update
             </button>
-            <button className="hero-btn" type="button">
+            <button className="hero-btn" type="button" onClick={onCancel}>
               Cancel
             </button>
           </div>
