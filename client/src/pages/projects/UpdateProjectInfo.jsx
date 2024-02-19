@@ -123,7 +123,7 @@ const UpdateProjectInfo = () => {
               onChange={(e) => setDuration(e.target.value)}
             />
           </FloatingLabel>
-          <div>
+          <div className="update-project-button-container">
             <button className="hero-btn" type="submit">
               Update
             </button>
