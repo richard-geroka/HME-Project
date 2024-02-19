@@ -50,7 +50,7 @@ const UpdateProjectInfo = () => {
             type="text"
             placeholder="project name"
             name="projectName"
-            value={projectInfo.projectName}
+            value={projectName}
             onChange={handleChange}
           />
         </FloatingLabel>
@@ -63,7 +63,7 @@ const UpdateProjectInfo = () => {
             type="text"
             placeholder="Location"
             name="location"
-            value={projectInfo.location}
+            value={location}
             onChange={handleChange}
           />
         </FloatingLabel>
@@ -76,7 +76,7 @@ const UpdateProjectInfo = () => {
             type="text"
             placeholder="description"
             name="description"
-            value={projectInfo.description}
+            value={description}
             onChange={handleChange}
           />
         </FloatingLabel>
@@ -89,7 +89,7 @@ const UpdateProjectInfo = () => {
             type="text"
             placeholder="build duration"
             name="duration"
-            value={projectInfo.duration}
+            value={duration}
             onChange={handleChange}
           />
         </FloatingLabel>
