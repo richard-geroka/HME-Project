@@ -1,14 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
-import useGetTokens from '../../hooks/useGetTokens';
+import { useCookies } from 'react-cookie';
 
 const UpdateProjectInfo = () => {
   const { id } = useParams();
-  const { headers } = useGetTokens();
+  const [cookies, _] = useCookies(['jwt-access']);
   const [projectName, setProjectName] = useState();
   const [location, setLocation] = useState();
   const [description, setDescription] = useState();
@@ -16,12 +17,18 @@ const UpdateProjectInfo = () => {
 
   const navigate = useNavigate();
 
+  const config = {
+    headers: {
+      Authorization: 'Bearer ' + cookies['jwt-access'],
+    },
+  };
+
   useEffect(() => {
     const fetchProject = async () => {
       try {
         const response = await axios.get(
           'http://localhost:3000/api/project/' + id,
-          headers,
+          config,
         );
         setProjectName(response.data.project.projectName);
         setLocation(response.data.project.location);
@@ -33,7 +40,7 @@ const UpdateProjectInfo = () => {
     };
 
     fetchProject();
-  }, [id, headers]);
+  }, []);
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -46,7 +53,7 @@ const UpdateProjectInfo = () => {
           description,
           duration,
         },
-        headers,
+        config,
       );
       alert('Updated info successfully!');
       navigate('/projects');

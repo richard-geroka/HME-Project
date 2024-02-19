@@ -8,8 +8,12 @@ import useGetTokens from '../../hooks/useGetTokens';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
-  const [cookies, _] = useCookies(['user']);
-  const { headers } = useGetTokens();
+  const [cookies, _] = useCookies(['jwt-access', 'user']);
+  const config = {
+    headers: {
+      Authorization: 'Bearer ' + cookies['jwt-access'],
+    },
+  };
 
   useEffect(() => {
     const fetchedData = async () => {
@@ -30,7 +34,7 @@ const ProjectInfo = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete('http://localhost:3000/api/project/' + id, headers);
+      await axios.delete('http://localhost:3000/api/project/' + id, config);
       alert('Project has been deleted successfully');
       window.location.reload();
     } catch (err) {
