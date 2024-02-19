@@ -26,6 +26,10 @@ const UpdateProjectInfo = () => {
           'http://localhost:3000/api/project/' + id,
           config,
         );
+        setProjectName(response.data.project.projectName);
+        setLocation(response.data.project.location);
+        setDescription(response.data.project.description);
+        setDuration(response.data.project.duration);
       } catch (err) {
         console.error(err);
       }
