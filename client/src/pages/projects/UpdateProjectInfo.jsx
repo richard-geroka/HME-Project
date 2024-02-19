@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import axios from 'axios';
 
 const UpdateProjectInfo = () => {
+  const { id } = useParams();
   const [projectName, setProjectName] = useState();
   const [location, setLocation] = useState();
   const [description, setDescription] = useState();
