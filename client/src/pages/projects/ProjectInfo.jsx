@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 import ProjectModal from './ProjectModal';
+import useGetTokens from '../../hooks/useGetTokens';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
-  const [cookies, _] = useCookies(['jwt-access', 'user']);
+  const [cookies, _] = useCookies(['user']);
+  const { headers } = useGetTokens();
 
   useEffect(() => {
     const fetchedData = async () => {
@@ -26,15 +28,9 @@ const ProjectInfo = () => {
     return new URL(`../../assets/images/${name}`, import.meta.url).href;
   }
 
-  const config = {
-    headers: {
-      Authorization: 'Bearer ' + cookies['jwt-access'],
-    },
-  };
-
   const handleDelete = async (id) => {
     try {
-      await axios.delete('http://localhost:3000/api/project/' + id, config);
+      await axios.delete('http://localhost:3000/api/project/' + id, headers);
       alert('Project has been deleted successfully');
       window.location.reload();
     } catch (err) {
