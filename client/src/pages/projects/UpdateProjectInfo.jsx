@@ -65,7 +65,8 @@ const UpdateProjectInfo = () => {
   return (
     <>
       <div className="project-form-container">
-        <Form onSubmit={onSubmit}>
+        <h2>Update Project Info</h2>
+        <Form onSubmit={onSubmit} className="update-project-form">
           <FloatingLabel
             controlId="floatingInput"
             label="Project Name"
