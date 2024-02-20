@@ -14,36 +14,53 @@ const ProjectsSection = () => {
           <h2 className="projects-h2 text-center text-success mb-2">
             Our recent projects -
           </h2>
-          <Carousel
-            slide={false}
-            data-bs-theme="dark"
-            className="border border-3 border-success mb-3"
-            interval={1000}
+          <div
+            className="d-flex flex-row gap-4 justify-content-center align-items-center"
+            style={{ width: '100%' }}
           >
-            <Carousel.Item>
-              <Image src={photoism} fluid />
-              <CarouselCaption>
-                <p className="fs-4 fw-bold">PHOTOISM</p>
-              </CarouselCaption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image src={photoismtwo} fluid />
-              <CarouselCaption>
-                <p className="fs-4 fw-bold">PHOTOISM</p>
-              </CarouselCaption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <Image src={photoismthree} fluid />
-              <CarouselCaption>
-                <p className="fs-4 fw-bold">PHOTOISM</p>
-              </CarouselCaption>
-            </Carousel.Item>
-          </Carousel>
-          <HoverButtonLink
-            link={'/projects'}
-            content={'View all projects'}
-            className={'hero-btn'}
-          />
+            <Carousel
+              slide={false}
+              data-bs-theme="dark"
+              className="border border-3 border-success mb-3"
+              interval={1000}
+            >
+              <Carousel.Item>
+                <Image src={photoism} fluid />
+                <CarouselCaption>
+                  <p className="fs-4 fw-bold">PHOTOISM</p>
+                </CarouselCaption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image src={photoismtwo} fluid />
+                <CarouselCaption>
+                  <p className="fs-4 fw-bold">PHOTOISM</p>
+                </CarouselCaption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image src={photoismthree} fluid />
+                <CarouselCaption>
+                  <p className="fs-4 fw-bold">PHOTOISM</p>
+                </CarouselCaption>
+              </Carousel.Item>
+            </Carousel>
+            <div
+              className="d-flex flex-column gap-1"
+              style={{ maxWidth: '50%' }}
+            >
+              <p className="text-success fs-5">Project: Photism</p>
+              <p className="text-success fs-5">Location: SM Lanang</p>
+              <p className="text-success fs-5">Duration: 3 Months</p>
+              <p className="text-success fs-5">
+                Description: Short and brief description about Photoism. Short
+                and brief description about Photoism
+              </p>
+              <HoverButtonLink
+                link={'/projects'}
+                content={'View all projects'}
+                className={'hero-btn w-50'}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

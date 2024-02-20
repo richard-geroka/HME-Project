@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 import ProjectModal from './ProjectModal';
-import useGetTokens from '../../hooks/useGetTokens';
 
 const ProjectInfo = () => {
   const [projects, setProjects] = useState([]);
