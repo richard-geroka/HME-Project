@@ -14,10 +14,7 @@ const ProjectsSection = () => {
           <h2 className="projects-h2 text-center text-success mb-2">
             Our recent projects -
           </h2>
-          <div
-            className="d-flex flex-row gap-4 justify-content-center align-items-center flex-wrap"
-            style={{ width: '100%' }}
-          >
+          <div className="d-flex flex-row gap-4 justify-content-center align-items-center flex-wrap w-100">
             <Carousel
               slide={false}
               data-bs-theme="dark"
@@ -43,10 +40,7 @@ const ProjectsSection = () => {
                 </CarouselCaption>
               </Carousel.Item>
             </Carousel>
-            <div
-              className="d-flex flex-column gap-1"
-              style={{ maxWidth: '50%' }}
-            >
+            <div className="main-page-project-text d-flex flex-column gap-1 justify-content-start align-items-start">
               <p className="text-success fs-5">Project: Photism</p>
               <p className="text-success fs-5">Location: SM Lanang</p>
               <p className="text-success fs-5">Duration: 3 Months</p>
@@ -54,7 +48,7 @@ const ProjectsSection = () => {
                 Description: Short and brief description about Photoism. Short
                 and brief description about Photoism
               </p>
-              <div className="mt-1 d-flex flex-column justify-content-center align-items-start">
+              <div className="d-flex flex-column justify-content-center align-items-start">
                 <HoverButtonLink
                   link={'/projects'}
                   content={'View all projects'}

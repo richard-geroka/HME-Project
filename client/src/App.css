@@ -125,6 +125,13 @@
   }
 }
 
+/* Project Style */
+@media (min-width: 576px) {
+  .main-page-project-text {
+    max-width: 500px;
+  }
+}
+
 /* About us style */
 .about {
   --skew-angle: -5deg;
