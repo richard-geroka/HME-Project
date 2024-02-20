@@ -23,21 +23,12 @@ const ProjectsSection = () => {
             >
               <Carousel.Item>
                 <Image src={photoism} fluid />
-                <CarouselCaption>
-                  <p className="fs-4 fw-bold">PHOTOISM</p>
-                </CarouselCaption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image src={photoismtwo} fluid />
-                <CarouselCaption>
-                  <p className="fs-4 fw-bold">PHOTOISM</p>
-                </CarouselCaption>
               </Carousel.Item>
               <Carousel.Item>
                 <Image src={photoismthree} fluid />
-                <CarouselCaption>
-                  <p className="fs-4 fw-bold">PHOTOISM</p>
-                </CarouselCaption>
               </Carousel.Item>
             </Carousel>
             <div className="main-page-project-text d-flex flex-column gap-1 justify-content-start align-items-start">
