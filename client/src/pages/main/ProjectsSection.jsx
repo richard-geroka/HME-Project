@@ -15,7 +15,7 @@ const ProjectsSection = () => {
             Our recent projects -
           </h2>
           <div
-            className="d-flex flex-row gap-4 justify-content-center align-items-center"
+            className="d-flex flex-row gap-4 justify-content-center align-items-center flex-wrap"
             style={{ width: '100%' }}
           >
             <Carousel
@@ -54,11 +54,13 @@ const ProjectsSection = () => {
                 Description: Short and brief description about Photoism. Short
                 and brief description about Photoism
               </p>
-              <HoverButtonLink
-                link={'/projects'}
-                content={'View all projects'}
-                className={'hero-btn w-50'}
-              />
+              <div className="mt-1 d-flex flex-column justify-content-center align-items-start">
+                <HoverButtonLink
+                  link={'/projects'}
+                  content={'View all projects'}
+                  className={'hero-btn'}
+                />
+              </div>
             </div>
           </div>
         </div>
