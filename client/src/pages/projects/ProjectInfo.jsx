@@ -70,16 +70,20 @@ const ProjectInfo = () => {
                   ) : undefined}
                   <div className="project-info-text">
                     <p className="project-info-data">
-                      Project: {project.projectName}
+                      <span className="first-word-bold">Project:</span>{' '}
+                      {project.projectName}
                     </p>
                     <p className="project-info-data">
-                      Location: {project.location}
+                      <span className="first-word-bold">Location:</span>{' '}
+                      {project.location}
                     </p>
                     <p className="project-info-data">
-                      Duration: {project.duration}
+                      <span className="first-word-bold">Duration:</span>{' '}
+                      {project.duration}
                     </p>
                     <p className="project-info-data">
-                      Description: {project.description}
+                      <span className="first-word-bold">Description:</span>{' '}
+                      {project.description}
                     </p>
                   </div>
                   <div className="project-info-image-container">

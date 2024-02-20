@@ -576,6 +576,12 @@
   color: var(--green);
   max-width: 400px;
   line-height: 1.6;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.first-word-bold {
+  font-weight: 500;
 }
 
 .project-info-btn-container {
