@@ -61,6 +61,9 @@ const Auth = () => {
           <button className="auth-btn" type="submit">
             Login
           </button>
+          <button className="auth-btn-cancel" type="button">
+            Cancel
+          </button>
         </form>
       </div>
     </>

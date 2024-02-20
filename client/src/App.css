@@ -675,3 +675,17 @@
 .auth-btn:hover {
   background-color: #dc3546cf;
 }
+
+.auth-btn-cancel {
+  border: 1px solid var(--red);
+  border-radius: 12px;
+  margin-top: 1em;
+  color: var(--black);
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.auth-btn-cancel:hover {
+  background-color: #dc3546cf;
+}
