@@ -92,6 +92,10 @@
   padding: 0.5em 1em;
 }
 
+.hero-btn:hover {
+  background-color: #750410;
+}
+
 @media (min-width: 768px) {
   .hero-text-content {
     line-height: 4rem;
