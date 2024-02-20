@@ -31,12 +31,19 @@ const ProjectsSection = () => {
               </Carousel.Item>
             </Carousel>
             <div className="main-page-project-text d-flex flex-column gap-1 justify-content-start align-items-start">
-              <p className="text-success fs-5">Project: Photism</p>
-              <p className="text-success fs-5">Location: SM Lanang</p>
-              <p className="text-success fs-5">Duration: 3 Months</p>
               <p className="text-success fs-5">
-                Description: Short and brief description about Photoism. Short
-                and brief description about Photoism
+                <span className="first-word-bold">Project:</span> Photism
+              </p>
+              <p className="text-success fs-5">
+                <span className="first-word-bold">Location:</span> SM Lanang
+              </p>
+              <p className="text-success fs-5">
+                <span className="first-word-bold">Duration:</span> 3 Months
+              </p>
+              <p className="text-success fs-5">
+                <span className="first-word-bold">Description:</span> Short and
+                brief description about Photoism. Short and brief description
+                about Photoism
               </p>
               <div className="d-flex flex-column justify-content-center align-items-start">
                 <HoverButtonLink
