@@ -648,11 +648,12 @@
   border-radius: 12px;
   color: var(--white);
   padding: 5em;
+  min-width: 30%;
 }
 
 .auth-container input {
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   min-height: 2.5rem;
 }
 
