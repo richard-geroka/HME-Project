@@ -10,7 +10,7 @@ const ProjectsSection = () => {
     <>
       <section className="projects" id="projects">
         <div className="wrapper d-flex flex-column justify-content-center align-items-center">
-          <h2 className="projects-h2 text-center text-success mb-2">
+          <h2 className="projects-h2 text-center text-success mb-4">
             Our recent projects -
           </h2>
           <div className="d-flex flex-row gap-4 justify-content-center align-items-center flex-wrap w-100">
