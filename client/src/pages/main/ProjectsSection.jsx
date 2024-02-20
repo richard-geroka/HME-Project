@@ -3,7 +3,6 @@ import Image from 'react-bootstrap/Image';
 import photoism from '../../assets/images/photoism1.png';
 import photoismtwo from '../../assets/images/photoism2.png';
 import photoismthree from '../../assets/images/photoism3.png';
-import CarouselCaption from 'react-bootstrap/esm/CarouselCaption';
 import HoverButtonLink from '../../components/HoverButtonLink';
 
 const ProjectsSection = () => {
