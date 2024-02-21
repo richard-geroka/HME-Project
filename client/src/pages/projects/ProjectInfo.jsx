@@ -37,7 +37,7 @@ const ProjectInfo = () => {
       alert('Project has been deleted successfully');
       window.location.reload();
     } catch (err) {
-      console.error(err);
+      alert(`Error: ${err.response.data.message}`);
     }
   };
 
