@@ -20,7 +20,7 @@ const ProjectInfo = () => {
         const response = await axios.get('http://localhost:3000/api/project');
         setProjects(response.data.projects);
       } catch (err) {
-        console.error(err);
+        alert(`Error: ${err.response.data.message}`);
       }
     };
 
