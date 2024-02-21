@@ -1,7 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-import path from 'path';
-import { fileURLToPath } from 'url';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
@@ -20,11 +18,6 @@ const app = express();
 app.use(cors());
 
 // Global Middlewares
-
-// Serving Static Files
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Set http security
 app.use(helmet());
