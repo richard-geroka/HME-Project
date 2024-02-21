@@ -31,7 +31,7 @@ const Auth = () => {
       });
       navigate('/');
     } catch (err) {
-      console.error(err);
+      alert(`Error: ${err.response.data.message}`);
     }
   };
 
