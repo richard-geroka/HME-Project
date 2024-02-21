@@ -55,7 +55,7 @@ const ProjectModal = () => {
       console.log(cookies);
       console.log(formData);
     } catch (err) {
-      console.error(err);
+      alert(`Error: ${err.response.data.message}`);
     }
   };
 
