@@ -59,7 +59,9 @@ const Auth = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          {authError ? <p className="text-danger">{authError}</p> : null}
+          {authError ? (
+            <p className="text-danger bg-light">{authError}</p>
+          ) : null}
           <button className="auth-btn" type="submit">
             Login
           </button>
