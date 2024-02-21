@@ -59,7 +59,6 @@ app.use(hpp());
 // Routes
 app.use('/api/user', userRouter);
 app.use('/api/project', projectRouter);
-app.use('/api/service', serviceRouter);
 
 // Global Error Handler
 app.use(globalErrorHandler);
