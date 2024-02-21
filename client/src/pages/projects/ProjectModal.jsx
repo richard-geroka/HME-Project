@@ -145,7 +145,7 @@ const ProjectModal = () => {
               <p className="text-success mb-1">
                 Project has been added successfully!
               </p>
-            ) : undefined}
+            ) : null}
             <Button variant="danger" type="submit" className="me-3">
               Submit
             </Button>

@@ -46,7 +46,7 @@ const ProjectInfo = () => {
       <section className="project-info">
         <div className="wrapper">
           <div className="modal-container">
-            {cookies.user ? <ProjectModal /> : undefined}
+            {cookies.user ? <ProjectModal /> : null}
           </div>
           {projects.map((project) => {
             return (
@@ -67,7 +67,7 @@ const ProjectInfo = () => {
                         <i className="bi bi-trash"></i> delete
                       </button>
                     </div>
-                  ) : undefined}
+                  ) : null}
                   <div className="project-info-text">
                     <p className="project-info-data">
                       <span className="first-word-bold">Project:</span>{' '}

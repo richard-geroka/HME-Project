@@ -56,7 +56,7 @@ const CollapsibleNavbar = () => {
                 >
                   Logout
                 </Nav.Link>
-              ) : undefined}
+              ) : null}
             </Nav>
           </Container>
         </Navbar.Collapse>
