@@ -35,7 +35,7 @@ const UpdateProjectInfo = () => {
         setDescription(response.data.project.description);
         setDuration(response.data.project.duration);
       } catch (err) {
-        console.error(err);
+        alert(`Error: ${err.response.data.message}`);
       }
     };
 
@@ -58,7 +58,7 @@ const UpdateProjectInfo = () => {
       alert('Updated info successfully!');
       navigate('/projects');
     } catch (err) {
-      console.error(err);
+      alert(`Error: ${err.response.data.message}`);
     }
   };
 
