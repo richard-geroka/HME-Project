@@ -32,7 +32,7 @@ const Auth = () => {
       });
       navigate('/');
     } catch (err) {
-      alert(`Error: ${err.response.data.message}`);
+      setAuthError(err.response.data.message);
     }
   };
 
