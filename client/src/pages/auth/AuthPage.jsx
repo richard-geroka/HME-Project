@@ -6,6 +6,7 @@ import axios from 'axios';
 const Auth = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [authError, setAuthError] = useState();
   // eslint-disable-next-line no-unused-vars
   const [_, setCookie] = useCookies(['jwt-access', 'user']);
 
