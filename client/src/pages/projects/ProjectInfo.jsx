@@ -90,7 +90,10 @@ const ProjectInfo = () => {
                     {project.photos.map((photo, index) => {
                       return (
                         <div key={index}>
-                          <img src={getImageUrl(photo)} alt="" />
+                          <img
+                            src={`http://localhost:3000/images/${photo}`}
+                            alt={`${project.projectName} + photo`}
+                          />
                         </div>
                       );
                     })}
