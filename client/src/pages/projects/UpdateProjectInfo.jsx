@@ -27,7 +27,7 @@ const UpdateProjectInfo = () => {
     const fetchProject = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:3000/api/project/' + id,
+          `${import.meta.env.VITE_API_URL}/api/project/` + id,
           config,
         );
         setProjectName(response.data.project.projectName);
@@ -46,7 +46,7 @@ const UpdateProjectInfo = () => {
     e.preventDefault();
     try {
       await axios.patch(
-        'http://localhost:3000/api/project/' + id,
+        `${import.meta.env.VITE_API_URL}/api/project/` + id,
         {
           projectName,
           location,

@@ -17,7 +17,9 @@ const ProjectInfo = () => {
   useEffect(() => {
     const fetchedData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/project');
+        const response = await axios.get(
+          `${import.meta.env.VITE_API_URL}/api/project`,
+        );
         setProjects(response.data.projects);
       } catch (err) {
         alert(`Error: ${err.response.data.message}`);
@@ -33,7 +35,10 @@ const ProjectInfo = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete('http://localhost:3000/api/project/' + id, config);
+      await axios.delete(
+        `${import.meta.env.VITE_API_URL}/api/project/` + id,
+        config,
+      );
       alert('Project has been deleted successfully');
       window.location.reload();
     } catch (err) {
@@ -91,7 +96,7 @@ const ProjectInfo = () => {
                       return (
                         <div key={index}>
                           <img
-                            src={`http://localhost:3000/images/${photo}`}
+                            src={`${import.meta.env.VITE_API_URL}/images/${photo}`}
                             alt={`${project.projectName} + photo`}
                           />
                         </div>
