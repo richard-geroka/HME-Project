@@ -1,7 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-import path from 'path';
-import { fileURLToPath } from 'url';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
