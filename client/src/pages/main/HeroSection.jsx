@@ -16,7 +16,7 @@ const HeroSection = () => {
           <p className="hero-dream">Your dream into reality</p>
         </div>
         <HoverButtonLink
-          link={'#projects'}
+          link={'/projects'}
           content={'Learn more'}
           className="hero-btn"
         />

@@ -17,7 +17,6 @@ import projectRouter from '../routes/projectRoutes.js';
 const app = express();
 
 app.set('trust proxy', 1);
-app.get('/ip', (req, res) => res.send(req.ip));
 
 app.use(cors());
 
